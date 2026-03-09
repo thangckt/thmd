@@ -1775,7 +1775,7 @@
 
 
 <h2 id="thmd.io.read_block" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thmd.io.read_block</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thmd.io.read_block</code>
 
 
 <a href="#thmd.io.read_block" class="headerlink" title="Permanent link">¤</a></h2>
@@ -1795,28 +1795,28 @@
 <p><span class="doc-section-title">Classes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            LmpLogFile (thmd.io.read_block.LmpLogFile)" href="../api/#thmd.io.read_block.LmpLogFile">LmpLogFile</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              LmpLogFile(logfile=None) (thmd.io.read_block.LmpLogFile)" href="../api/#thmd.io.read_block.LmpLogFile">LmpLogFile</a></code></b>
           –
           <div class="doc-md-description">
             <p>Create an Object of LOG file.</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            LmpRDF (thmd.io.read_block.LmpRDF)" href="../api/#thmd.io.read_block.LmpRDF">LmpRDF</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              LmpRDF(file_name: str) (thmd.io.read_block.LmpRDF)" href="../api/#thmd.io.read_block.LmpRDF">LmpRDF</a></code></b>
           –
           <div class="doc-md-description">
             <p>class to read Radial Distribution Fuction (RDF) file from Lammps compute</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            LmpAveChunk (thmd.io.read_block.LmpAveChunk)" href="../api/#thmd.io.read_block.LmpAveChunk">LmpAveChunk</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              LmpAveChunk(file_name) (thmd.io.read_block.LmpAveChunk)" href="../api/#thmd.io.read_block.LmpAveChunk">LmpAveChunk</a></code></b>
           –
           <div class="doc-md-description">
             <p>class to read Radial Distribution Fuction (RDF) file from Lammps compute</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            PlumHistogram (thmd.io.read_block.PlumHistogram)" href="../api/#thmd.io.read_block.PlumHistogram">PlumHistogram</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              PlumHistogram(file_name) (thmd.io.read_block.PlumHistogram)" href="../api/#thmd.io.read_block.PlumHistogram">PlumHistogram</a></code></b>
           –
           <div class="doc-md-description">
             <p>Create an Object of DUMP file</p>
@@ -1830,7 +1830,7 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            average_df_list (thmd.io.read_block.average_df_list)" href="../api/#thmd.io.read_block.average_df_list">average_df_list</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            average_df_list(list_df: list[pl.DataFrame]) -> pl.DataFrame (thmd.io.read_block.average_df_list)" href="../api/#thmd.io.read_block.average_df_list">average_df_list</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute average of list of DataFrame</p>
@@ -1857,12 +1857,10 @@
 
 
 <h3 id="thmd.io.read_block.LmpLogFile" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">LmpLogFile</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">LmpLogFile</span><span class="p">(</span><span class="n">logfile</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_block.LmpLogFile" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">LmpLogFile</span><span class="p">(</span><span class="n">logfile</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1889,7 +1887,7 @@
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="            LmpLogFile (thmd.io.read_block.LmpLogFile)" href="../api/#thmd.io.read_block.LmpLogFile">LmpLogFile</a></code>
+<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="              LmpLogFile(logfile=None) (thmd.io.read_block.LmpLogFile)" href="../api/#thmd.io.read_block.LmpLogFile">LmpLogFile</a></code>
 )          –
           <div class="doc-md-description">
             <p>LmpLogFile object</p>
@@ -1920,8 +1918,12 @@
       <a href="#thmd.io.read_block"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;read_block</a>
   </span>
 
-            <span class="doc doc-backlink-crumb last">
+            <span class="doc doc-backlink-crumb">
       <a href="#thmd.io.read_block.LmpLogFile"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;LmpLogFile</a>
+  </span>
+
+            <span class="doc doc-backlink-crumb last">
+      <a href="#thmd.io.read_block.LmpLogFile.read_log"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;read_log</a>
   </span>
 
       </li>
@@ -1943,7 +1945,7 @@
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            read_log (thmd.io.read_block.LmpLogFile.read_log)" href="../api/#thmd.io.read_block.LmpLogFile.read_log">read_log</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            read_log(logfile) (thmd.io.read_block.LmpLogFile.read_log)" href="../api/#thmd.io.read_block.LmpLogFile.read_log">read_log</a></code></b>
             –
             <div class="doc-md-description">
               <p>Read LAMMPS logfile</p>
@@ -1971,12 +1973,10 @@
 
 
 <h4 id="thmd.io.read_block.LmpLogFile.read_log" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">read_log</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">read_log</span><span class="p">(</span><span class="n">logfile</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_block.LmpLogFile.read_log" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">read_log</span><span class="p">(</span><span class="n">logfile</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1988,7 +1988,7 @@ Args:
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="            LmpLogFile (thmd.io.read_block.LmpLogFile)" href="../api/#thmd.io.read_block.LmpLogFile">LmpLogFile</a></code>
+<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="              LmpLogFile(logfile=None) (thmd.io.read_block.LmpLogFile)" href="../api/#thmd.io.read_block.LmpLogFile">LmpLogFile</a></code>
 )          –
           <div class="doc-md-description">
             <p>LmpLogFile object</p>
@@ -2015,12 +2015,10 @@ Args:
 
 
 <h3 id="thmd.io.read_block.LmpRDF" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">LmpRDF</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">LmpRDF</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_block.LmpRDF" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">LmpRDF</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2086,7 +2084,7 @@ Args:
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="            LmpAveChunk (thmd.io.read_block.LmpAveChunk)" href="../api/#thmd.io.read_block.LmpAveChunk">LmpAveChunk</a></code>
+<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="              LmpAveChunk(file_name) (thmd.io.read_block.LmpAveChunk)" href="../api/#thmd.io.read_block.LmpAveChunk">LmpAveChunk</a></code>
 )          –
           <div class="doc-md-description">
             <p>LmpAveChunk object</p>
@@ -2165,12 +2163,10 @@ Args:
 
 
 <h4 id="thmd.io.read_block.LmpRDF.read_RDF" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">read_RDF</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">read_RDF</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_block.LmpRDF.read_RDF" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">read_RDF</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2192,7 +2188,7 @@ Args:
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="            LmpRDF (thmd.io.read_block.LmpRDF)" href="../api/#thmd.io.read_block.LmpRDF">LmpRDF</a></code>
+<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="              LmpRDF(file_name: str) (thmd.io.read_block.LmpRDF)" href="../api/#thmd.io.read_block.LmpRDF">LmpRDF</a></code>
 )          –
           <div class="doc-md-description">
             <p>LmpRDF object</p>
@@ -2210,12 +2206,10 @@ Args:
 
 
 <h4 id="thmd.io.read_block.LmpRDF.compute_AveRDF" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">compute_AveRDF</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">compute_AveRDF</span><span class="p">()</span></code>
 
 <a href="#thmd.io.read_block.LmpRDF.compute_AveRDF" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">compute_AveRDF</span><span class="p">()</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2252,12 +2246,10 @@ Args:
 
 
 <h3 id="thmd.io.read_block.LmpAveChunk" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">LmpAveChunk</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">LmpAveChunk</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_block.LmpAveChunk" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">LmpAveChunk</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2323,7 +2315,7 @@ Args:
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="            LmpAveChunk (thmd.io.read_block.LmpAveChunk)" href="../api/#thmd.io.read_block.LmpAveChunk">LmpAveChunk</a></code>
+<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="              LmpAveChunk(file_name) (thmd.io.read_block.LmpAveChunk)" href="../api/#thmd.io.read_block.LmpAveChunk">LmpAveChunk</a></code>
 )          –
           <div class="doc-md-description">
             <p>LmpAveChunk object</p>
@@ -2413,12 +2405,10 @@ Args:
 
 
 <h4 id="thmd.io.read_block.LmpAveChunk.read_AveChunk" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">read_AveChunk</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">read_AveChunk</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_block.LmpAveChunk.read_AveChunk" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">read_AveChunk</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2440,7 +2430,7 @@ Args:
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="            LmpAveChunk (thmd.io.read_block.LmpAveChunk)" href="../api/#thmd.io.read_block.LmpAveChunk">LmpAveChunk</a></code>
+<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="              LmpAveChunk(file_name) (thmd.io.read_block.LmpAveChunk)" href="../api/#thmd.io.read_block.LmpAveChunk">LmpAveChunk</a></code>
 )          –
           <div class="doc-md-description">
             <p>LmpAveChunk object</p>
@@ -2458,12 +2448,10 @@ Args:
 
 
 <h4 id="thmd.io.read_block.LmpAveChunk.compute_AveChunk" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">compute_AveChunk</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">compute_AveChunk</span><span class="p">()</span></code>
 
 <a href="#thmd.io.read_block.LmpAveChunk.compute_AveChunk" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">compute_AveChunk</span><span class="p">()</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2500,12 +2488,10 @@ Args:
 
 
 <h3 id="thmd.io.read_block.PlumHistogram" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">PlumHistogram</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">PlumHistogram</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_block.PlumHistogram" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">PlumHistogram</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2538,14 +2524,14 @@ Args:
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_tail (thmd.io.read_block.PlumHistogram.find_tail)" href="../api/#thmd.io.read_block.PlumHistogram.find_tail">find_tail</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_tail(tol=0.0001, gridSize=1e-06) (thmd.io.read_block.PlumHistogram.find_tail)" href="../api/#thmd.io.read_block.PlumHistogram.find_tail">find_tail</a></code></b>
             –
             <div class="doc-md-description">
               <p>find limit of histogram</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_center (thmd.io.read_block.PlumHistogram.find_center)" href="../api/#thmd.io.read_block.PlumHistogram.find_center">find_center</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_center(gridSize=1e-06) (thmd.io.read_block.PlumHistogram.find_center)" href="../api/#thmd.io.read_block.PlumHistogram.find_center">find_center</a></code></b>
             –
             <div class="doc-md-description">
               <p>find center of histogram</p>
@@ -2577,7 +2563,7 @@ Args:
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="            PlumHistogram (thmd.io.read_block.PlumHistogram)" href="../api/#thmd.io.read_block.PlumHistogram">PlumHistogram</a></code>
+<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="              PlumHistogram(file_name) (thmd.io.read_block.PlumHistogram)" href="../api/#thmd.io.read_block.PlumHistogram">PlumHistogram</a></code>
 )          –
           <div class="doc-md-description">
             <p>PlumHistogram object</p>
@@ -2651,12 +2637,10 @@ Args:
 
 
 <h4 id="thmd.io.read_block.PlumHistogram.read_histogram" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">read_histogram</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">read_histogram</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_block.PlumHistogram.read_histogram" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">read_histogram</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2678,7 +2662,7 @@ Args:
 <p><span class="doc-section-title">Returns:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="            PlumHistogram (thmd.io.read_block.PlumHistogram)" href="../api/#thmd.io.read_block.PlumHistogram">PlumHistogram</a></code>
+<b><code>Obj</code></b> (              <code><a class="autorefs autorefs-internal" title="              PlumHistogram(file_name) (thmd.io.read_block.PlumHistogram)" href="../api/#thmd.io.read_block.PlumHistogram">PlumHistogram</a></code>
 )          –
           <div class="doc-md-description">
             <p>update PlumHistogram object</p>
@@ -2696,12 +2680,10 @@ Args:
 
 
 <h4 id="thmd.io.read_block.PlumHistogram.compute_average_histogram" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">compute_average_histogram</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">compute_average_histogram</span><span class="p">()</span></code>
 
 <a href="#thmd.io.read_block.PlumHistogram.compute_average_histogram" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">compute_average_histogram</span><span class="p">()</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2729,12 +2711,10 @@ Args:
 
 
 <h4 id="thmd.io.read_block.PlumHistogram.areaHisto" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">areaHisto</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">areaHisto</span><span class="p">()</span></code>
 
 <a href="#thmd.io.read_block.PlumHistogram.areaHisto" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">areaHisto</span><span class="p">()</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2748,12 +2728,10 @@ Args:
 
 
 <h4 id="thmd.io.read_block.PlumHistogram.fit_std_gaussian" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">fit_std_gaussian</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">fit_std_gaussian</span><span class="p">()</span></code>
 
 <a href="#thmd.io.read_block.PlumHistogram.fit_std_gaussian" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fit_std_gaussian</span><span class="p">()</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2781,12 +2759,10 @@ Args:
 
 
 <h4 id="thmd.io.read_block.PlumHistogram.find_tail" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">find_tail</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">find_tail</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_block.PlumHistogram.find_tail" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_tail</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2846,12 +2822,10 @@ Args:
 
 
 <h4 id="thmd.io.read_block.PlumHistogram.find_center" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">find_center</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">find_center</span><span class="p">(</span><span class="n">gridSize</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_block.PlumHistogram.find_center" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_center</span><span class="p">(</span><span class="n">gridSize</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2903,12 +2877,10 @@ Args:
 
 
 <h3 id="thmd.io.read_block.average_df_list" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">average_df_list</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">average_df_list</span><span class="p">(</span><span class="n">list_df</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span></code>
 
 <a href="#thmd.io.read_block.average_df_list" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">average_df_list</span><span class="p">(</span><span class="n">list_df</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">DataFrame</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 

@@ -1573,7 +1573,7 @@
 
 
 <h2 id="thmd.post.latex" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thmd.post.latex</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thmd.post.latex</code>
 
 
 <a href="#thmd.post.latex" class="headerlink" title="Permanent link">¤</a></h2>
@@ -1595,63 +1595,63 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            get_citekeys (thmd.post.latex.get_citekeys)" href="../../api/#thmd.post.latex.get_citekeys">get_citekeys</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            get_citekeys(tex_files: Union[str, list]) -> list (thmd.post.latex.get_citekeys)" href="../../api/#thmd.post.latex.get_citekeys">get_citekeys</a></code></b>
             –
             <div class="doc-md-description">
               <p>Extract all citekeys from a list of <code>.tex</code> files.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            select_entries (thmd.post.latex.select_entries)" href="../../api/#thmd.post.latex.select_entries">select_entries</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            select_entries(citekeys: list, bib_file: str) -> BibliographyData (thmd.post.latex.select_entries)" href="../../api/#thmd.post.latex.select_entries">select_entries</a></code></b>
             –
             <div class="doc-md-description">
               <p>Select bibliography entries from a Bibtex <code>.bib</code> file</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            write_bibtex (thmd.post.latex.write_bibtex)" href="../../api/#thmd.post.latex.write_bibtex">write_bibtex</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            write_bibtex(bib_data: BibliographyData, out_file: str = 'reference.bib') -> None (thmd.post.latex.write_bibtex)" href="../../api/#thmd.post.latex.write_bibtex">write_bibtex</a></code></b>
             –
             <div class="doc-md-description">
               <p>Write bibliography data to a Bibtex <code>.bib</code> file</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            minimize_bibtex (thmd.post.latex.minimize_bibtex)" href="../../api/#thmd.post.latex.minimize_bibtex">minimize_bibtex</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            minimize_bibtex(tex_files: Union[str, list], bib_file: str, out_file: str = 'reference_min.bib') -> None (thmd.post.latex.minimize_bibtex)" href="../../api/#thmd.post.latex.minimize_bibtex">minimize_bibtex</a></code></b>
             –
             <div class="doc-md-description">
               <p>Minimize the <code>.bib</code> file so that it contains only entries that are cited in the <code>.tex</code> files.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            check_bibtex (thmd.post.latex.check_bibtex)" href="../../api/#thmd.post.latex.check_bibtex">check_bibtex</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            check_bibtex(bib_file: str, verbose: bool = True, logfile: bool = False, lower_key=False) -> list (thmd.post.latex.check_bibtex)" href="../../api/#thmd.post.latex.check_bibtex">check_bibtex</a></code></b>
             –
             <div class="doc-md-description">
               <p>Check for missing fields in the bibtex entries. Based on the <code>type</code> of the entry, there are <a href="https://www.bibtex.com/e/entry-types/">mandatory fields</a>. This function is to check if any of mandatory fields is missing.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            tex2doc (thmd.post.latex.tex2doc)" href="../../api/#thmd.post.latex.tex2doc">tex2doc</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            tex2doc(tex_file: str, out_file: str = 'output.docx', bib_file: str = None, **kwargs) (thmd.post.latex.tex2doc)" href="../../api/#thmd.post.latex.tex2doc">tex2doc</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert a Latex source <code>.tex</code> file to a Microsoft Word <code>.docx</code> file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            tex2pdf (thmd.post.latex.tex2pdf)" href="../../api/#thmd.post.latex.tex2pdf">tex2pdf</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            tex2pdf(tex_file: str, out_file: str = 'output.pdf', bib_file: str = None, **kwargs) (thmd.post.latex.tex2pdf)" href="../../api/#thmd.post.latex.tex2pdf">tex2pdf</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert a Latex source <code>.tex</code> file to a Microsoft Word <code>.docx</code> file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            replace_acronyms (thmd.post.latex.replace_acronyms)" href="../../api/#thmd.post.latex.replace_acronyms">replace_acronyms</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            replace_acronyms(tex_file: str, acronyms: dict) -> list (thmd.post.latex.replace_acronyms)" href="../../api/#thmd.post.latex.replace_acronyms">replace_acronyms</a></code></b>
             –
             <div class="doc-md-description">
               <p>Check and replace if acronyms are used in a <code>.tex</code> file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            count_cited_journals (thmd.post.latex.count_cited_journals)" href="../../api/#thmd.post.latex.count_cited_journals">count_cited_journals</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            count_cited_journals(bib_file: str) -> dict (thmd.post.latex.count_cited_journals)" href="../../api/#thmd.post.latex.count_cited_journals">count_cited_journals</a></code></b>
             –
             <div class="doc-md-description">
               <p>Count the number of times each journal is cited in the <code>.bib</code> file.</p>
@@ -1678,12 +1678,10 @@
 
 
 <h3 id="thmd.post.latex.get_citekeys" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">get_citekeys</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">get_citekeys</span><span class="p">(</span><span class="n">tex_files</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span></code>
 
 <a href="#thmd.post.latex.get_citekeys" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">get_citekeys</span><span class="p">(</span><span class="n">tex_files</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1724,12 +1722,10 @@
 
 
 <h3 id="thmd.post.latex.select_entries" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">select_entries</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">select_entries</span><span class="p">(</span><span class="n">citekeys</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BibliographyData</span></code>
 
 <a href="#thmd.post.latex.select_entries" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">select_entries</span><span class="p">(</span><span class="n">citekeys</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">BibliographyData</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1778,12 +1774,10 @@
 
 
 <h3 id="thmd.post.latex.write_bibtex" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">write_bibtex</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">write_bibtex</span><span class="p">(</span><span class="n">bib_data</span><span class="p">:</span> <span class="n">BibliographyData</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;reference.bib&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
 
 <a href="#thmd.post.latex.write_bibtex" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">write_bibtex</span><span class="p">(</span><span class="n">bib_data</span><span class="p">:</span> <span class="n">BibliographyData</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;reference.bib&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1822,12 +1816,10 @@
 
 
 <h3 id="thmd.post.latex.minimize_bibtex" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">minimize_bibtex</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">minimize_bibtex</span><span class="p">(</span><span class="n">tex_files</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;reference_min.bib&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
 
 <a href="#thmd.post.latex.minimize_bibtex" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">minimize_bibtex</span><span class="p">(</span><span class="n">tex_files</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;reference_min.bib&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1874,12 +1866,10 @@
 
 
 <h3 id="thmd.post.latex.check_bibtex" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">check_bibtex</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_bibtex</span><span class="p">(</span><span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">lower_key</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span></code>
 
 <a href="#thmd.post.latex.check_bibtex" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">check_bibtex</span><span class="p">(</span><span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">lower_key</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1944,12 +1934,10 @@
 
 
 <h3 id="thmd.post.latex.tex2doc" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">tex2doc</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tex2doc</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;output.docx&#39;</span><span class="p">,</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thmd.post.latex.tex2doc" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">tex2doc</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;output.docx&#39;</span><span class="p">,</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2047,12 +2035,10 @@ Need to install <code>pandoc</code> and <code>panflute</code> first.
 
 
 <h3 id="thmd.post.latex.tex2pdf" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">tex2pdf</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tex2pdf</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;output.pdf&#39;</span><span class="p">,</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thmd.post.latex.tex2pdf" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">tex2pdf</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;output.pdf&#39;</span><span class="p">,</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2130,12 +2116,10 @@ Need to install <code>pandoc</code> and <code>panflute</code> first.
 
 
 <h3 id="thmd.post.latex.replace_acronyms" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">replace_acronyms</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">replace_acronyms</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">acronyms</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span></code>
 
 <a href="#thmd.post.latex.replace_acronyms" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">replace_acronyms</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">acronyms</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2152,12 +2136,10 @@ Need to install <code>pandoc</code> and <code>panflute</code> first.
 
 
 <h3 id="thmd.post.latex.count_cited_journals" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">count_cited_journals</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">count_cited_journals</span><span class="p">(</span><span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
 <a href="#thmd.post.latex.count_cited_journals" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">count_cited_journals</span><span class="p">(</span><span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 

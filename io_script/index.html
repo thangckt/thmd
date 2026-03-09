@@ -1463,7 +1463,7 @@
 
 
 <h2 id="thmd.io.script" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thmd.io.script</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thmd.io.script</code>
 
 
 <a href="#thmd.io.script" class="headerlink" title="Permanent link">¤</a></h2>
@@ -1487,28 +1487,28 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            read_lines (thmd.io.script.read_lines)" href="../api/#thmd.io.script.read_lines">read_lines</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            read_lines(file_name: str, keywords: list = []) (thmd.io.script.read_lines)" href="../api/#thmd.io.script.read_lines">read_lines</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to read lines in a script that match some KEY_WORDs.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            read_plumed_block (thmd.io.script.read_plumed_block)" href="../api/#thmd.io.script.read_plumed_block">read_plumed_block</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            read_plumed_block(file_name: str, block_name: str = ' ') -> list (thmd.io.script.read_plumed_block)" href="../api/#thmd.io.script.read_plumed_block">read_plumed_block</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to read block_command in PLUMED script.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            write_lines (thmd.io.script.write_lines)" href="../api/#thmd.io.script.write_lines">write_lines</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            write_lines(filename: str, lines: list) (thmd.io.script.write_lines)" href="../api/#thmd.io.script.write_lines">write_lines</a></code></b>
             –
             <div class="doc-md-description">
               <p>Funtion to write a list of strings into file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            write_list (thmd.io.script.write_list)" href="../api/#thmd.io.script.write_list">write_list</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            write_list(lines: list, filename: str) (thmd.io.script.write_list)" href="../api/#thmd.io.script.write_list">write_list</a></code></b>
             –
             <div class="doc-md-description">
               <p>Funtion to write a list of strings into file.</p>
@@ -1535,12 +1535,10 @@
 
 
 <h3 id="thmd.io.script.read_lines" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">read_lines</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">read_lines</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">keywords</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="p">[])</span></code>
 
 <a href="#thmd.io.script.read_lines" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">read_lines</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">keywords</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="p">[])</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1598,12 +1596,10 @@
 
 
 <h3 id="thmd.io.script.read_plumed_block" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">read_plumed_block</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">read_plumed_block</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">block_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span></code>
 
 <a href="#thmd.io.script.read_plumed_block" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">read_plumed_block</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">block_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1654,12 +1650,10 @@
 
 
 <h3 id="thmd.io.script.write_lines" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">write_lines</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">write_lines</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">lines</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span></code>
 
 <a href="#thmd.io.script.write_lines" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">write_lines</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">lines</span><span class="p">:</span> <span class="nb">list</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1696,12 +1690,10 @@
 
 
 <h3 id="thmd.io.script.write_list" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">write_list</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">write_list</span><span class="p">(</span><span class="n">lines</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span></code>
 
 <a href="#thmd.io.script.write_list" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">write_list</span><span class="p">(</span><span class="n">lines</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">filename</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 

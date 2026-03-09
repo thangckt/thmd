@@ -2753,7 +2753,7 @@
 
 
 <h2 id="thmd.calc.colvar" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thmd.calc.colvar</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thmd.calc.colvar</code>
 
 
 <a href="#thmd.calc.colvar" class="headerlink" title="Permanent link">¤</a></h2>
@@ -2850,28 +2850,28 @@
 <p><span class="doc-section-title">Classes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            RATIONAL (thmd.calc.colvar.RATIONAL)" href="../api/#thmd.calc.colvar.RATIONAL">RATIONAL</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              RATIONAL(r0, d0=0.0, n=6, m=12, dmax_tol=0.001) (thmd.calc.colvar.RATIONAL)" href="../api/#thmd.calc.colvar.RATIONAL">RATIONAL</a></code></b>
           –
           <div class="doc-md-description">
             <p>Create an Object of SWITCHING FUNCTION</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            HEAVISIDE (thmd.calc.colvar.HEAVISIDE)" href="../api/#thmd.calc.colvar.HEAVISIDE">HEAVISIDE</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              HEAVISIDE(r0) (thmd.calc.colvar.HEAVISIDE)" href="../api/#thmd.calc.colvar.HEAVISIDE">HEAVISIDE</a></code></b>
           –
           <div class="doc-md-description">
             
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            CUBIC (thmd.calc.colvar.CUBIC)" href="../api/#thmd.calc.colvar.CUBIC">CUBIC</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              CUBIC(d0, dmax) (thmd.calc.colvar.CUBIC)" href="../api/#thmd.calc.colvar.CUBIC">CUBIC</a></code></b>
           –
           <div class="doc-md-description">
             <p>Create an Object of SWITCHING FUNCTION</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            SMAP (thmd.calc.colvar.SMAP)" href="../api/#thmd.calc.colvar.SMAP">SMAP</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              SMAP(r0, a=10, b=20, d0=0, tol=0.0001) (thmd.calc.colvar.SMAP)" href="../api/#thmd.calc.colvar.SMAP">SMAP</a></code></b>
           –
           <div class="doc-md-description">
             
@@ -2900,12 +2900,10 @@
 
 
 <h3 id="thmd.calc.colvar.RATIONAL" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">RATIONAL</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">RATIONAL</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">d0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">dmax_tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.RATIONAL" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">RATIONAL</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">d0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">dmax_tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2995,14 +2993,14 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            dmax (thmd.calc.colvar.RATIONAL.dmax)" href="../api/#thmd.calc.colvar.RATIONAL.dmax">dmax</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            dmax(dmax_tol) (thmd.calc.colvar.RATIONAL.dmax)" href="../api/#thmd.calc.colvar.RATIONAL.dmax">dmax</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            eval (thmd.calc.colvar.RATIONAL.eval)" href="../api/#thmd.calc.colvar.RATIONAL.eval">eval</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            eval(x, compute_der=False) (thmd.calc.colvar.RATIONAL.eval)" href="../api/#thmd.calc.colvar.RATIONAL.eval">eval</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute &amp; return value and derivation of sw function</p>
@@ -3016,8 +3014,7 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            r0
-
+          <b><code><a class="autorefs autorefs-internal" title="            r0 = r0
 
   
       instance-attribute
@@ -3028,8 +3025,7 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            d0
-
+          <b><code><a class="autorefs autorefs-internal" title="            d0 = d0
 
   
       instance-attribute
@@ -3040,8 +3036,7 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            n
-
+          <b><code><a class="autorefs autorefs-internal" title="            n = n
 
   
       instance-attribute
@@ -3052,8 +3047,7 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            m
-
+          <b><code><a class="autorefs autorefs-internal" title="            m = m
 
   
       instance-attribute
@@ -3081,16 +3075,14 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 
 
 <h4 id="thmd.calc.colvar.RATIONAL.r0" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">r0</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">r0</span> <span class="o">=</span> <span class="n">r0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.RATIONAL.r0" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">r0</span> <span class="o">=</span> <span class="n">r0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3104,16 +3096,14 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 
 
 <h4 id="thmd.calc.colvar.RATIONAL.d0" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">d0</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.RATIONAL.d0" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3127,16 +3117,14 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 
 
 <h4 id="thmd.calc.colvar.RATIONAL.n" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">n</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">n</span> <span class="o">=</span> <span class="n">n</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.RATIONAL.n" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">n</span> <span class="o">=</span> <span class="n">n</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3150,16 +3138,14 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 
 
 <h4 id="thmd.calc.colvar.RATIONAL.m" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">m</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">m</span> <span class="o">=</span> <span class="n">m</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.RATIONAL.m" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">m</span> <span class="o">=</span> <span class="n">m</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3175,12 +3161,10 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 
 
 <h4 id="thmd.calc.colvar.RATIONAL.dmax" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">dmax</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">dmax</span><span class="p">(</span><span class="n">dmax_tol</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.RATIONAL.dmax" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">dmax</span><span class="p">(</span><span class="n">dmax_tol</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3194,12 +3178,10 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 
 
 <h4 id="thmd.calc.colvar.RATIONAL.eval" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">eval</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="nb">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.RATIONAL.eval" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3225,12 +3207,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h3 id="thmd.calc.colvar.HEAVISIDE" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">HEAVISIDE</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">HEAVISIDE</span><span class="p">(</span><span class="n">r0</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.HEAVISIDE" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">HEAVISIDE</span><span class="p">(</span><span class="n">r0</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3251,14 +3231,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            eval (thmd.calc.colvar.HEAVISIDE.eval)" href="../api/#thmd.calc.colvar.HEAVISIDE.eval">eval</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            eval(x: Union[float, list, np.ndarray]) -> np.ndarray (thmd.calc.colvar.HEAVISIDE.eval)" href="../api/#thmd.calc.colvar.HEAVISIDE.eval">eval</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute value of sw function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            der (thmd.calc.colvar.HEAVISIDE.der)" href="../api/#thmd.calc.colvar.HEAVISIDE.der">der</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            der(x: float | list | np.ndarray) -> np.ndarray (thmd.calc.colvar.HEAVISIDE.der)" href="../api/#thmd.calc.colvar.HEAVISIDE.der">der</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute derivative of sw function</p>
@@ -3272,8 +3252,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            dmax
-
+          <b><code><a class="autorefs autorefs-internal" title="            dmax = r0
 
   
       instance-attribute
@@ -3301,16 +3280,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.HEAVISIDE.dmax" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">dmax</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">dmax</span> <span class="o">=</span> <span class="n">r0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.HEAVISIDE.dmax" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">dmax</span> <span class="o">=</span> <span class="n">r0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3326,12 +3303,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.HEAVISIDE.eval" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">eval</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="nb">eval</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">list</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span></code>
 
 <a href="#thmd.calc.colvar.HEAVISIDE.eval" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">eval</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">list</span><span class="p">,</span> <span class="n">ndarray</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3347,12 +3322,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.HEAVISIDE.der" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">der</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">der</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span></code>
 
 <a href="#thmd.calc.colvar.HEAVISIDE.der" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">der</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3377,12 +3350,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h3 id="thmd.calc.colvar.CUBIC" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">CUBIC</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">CUBIC</span><span class="p">(</span><span class="n">d0</span><span class="p">,</span> <span class="n">dmax</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.CUBIC" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">CUBIC</span><span class="p">(</span><span class="n">d0</span><span class="p">,</span> <span class="n">dmax</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3444,7 +3415,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            eval (thmd.calc.colvar.CUBIC.eval)" href="../api/#thmd.calc.colvar.CUBIC.eval">eval</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            eval(x, compute_der=False) (thmd.calc.colvar.CUBIC.eval)" href="../api/#thmd.calc.colvar.CUBIC.eval">eval</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute &amp; return value and derivation of sw function</p>
@@ -3458,8 +3429,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            d0
-
+          <b><code><a class="autorefs autorefs-internal" title="            d0 = d0
 
   
       instance-attribute
@@ -3470,8 +3440,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            dmax
-
+          <b><code><a class="autorefs autorefs-internal" title="            dmax = dmax
 
   
       instance-attribute
@@ -3499,16 +3468,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.CUBIC.d0" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">d0</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.CUBIC.d0" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3522,16 +3489,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.CUBIC.dmax" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">dmax</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">dmax</span> <span class="o">=</span> <span class="n">dmax</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.CUBIC.dmax" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">dmax</span> <span class="o">=</span> <span class="n">dmax</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3547,12 +3512,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.CUBIC.eval" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">eval</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="nb">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.CUBIC.eval" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3609,12 +3572,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h3 id="thmd.calc.colvar.SMAP" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">SMAP</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">SMAP</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">d0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.SMAP" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">SMAP</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">d0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3635,42 +3596,42 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            eval (thmd.calc.colvar.SMAP.eval)" href="../api/#thmd.calc.colvar.SMAP.eval">eval</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            eval(x, compute_der=False) (thmd.calc.colvar.SMAP.eval)" href="../api/#thmd.calc.colvar.SMAP.eval">eval</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            findDmax (thmd.calc.colvar.SMAP.findDmax)" href="../api/#thmd.calc.colvar.SMAP.findDmax">findDmax</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            findDmax(tol=None, upper_bound=100, gridSize=0.0001) (thmd.calc.colvar.SMAP.findDmax)" href="../api/#thmd.calc.colvar.SMAP.findDmax">findDmax</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            findDmin (thmd.calc.colvar.SMAP.findDmin)" href="../api/#thmd.calc.colvar.SMAP.findDmin">findDmin</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            findDmin(tol=None, lower_bound=None, gridSize=0.0001) (thmd.calc.colvar.SMAP.findDmin)" href="../api/#thmd.calc.colvar.SMAP.findDmin">findDmin</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_Dmin_Dmax (thmd.calc.colvar.SMAP.find_Dmin_Dmax)" href="../api/#thmd.calc.colvar.SMAP.find_Dmin_Dmax">find_Dmin_Dmax</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_Dmin_Dmax(tol=None, gridSize=0.0001, upper_bound=50) (thmd.calc.colvar.SMAP.find_Dmin_Dmax)" href="../api/#thmd.calc.colvar.SMAP.find_Dmin_Dmax">find_Dmin_Dmax</a></code></b>
             –
             <div class="doc-md-description">
               <p>find Dmin and Dmax of function based on given tolerance</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            estimate_ab (thmd.calc.colvar.SMAP.estimate_ab)" href="../api/#thmd.calc.colvar.SMAP.estimate_ab">estimate_ab</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            estimate_ab(target_Dmin, target_Dmax, init_a=None, init_b=None, tol=0.001) (thmd.calc.colvar.SMAP.estimate_ab)" href="../api/#thmd.calc.colvar.SMAP.estimate_ab">estimate_ab</a></code></b>
             –
             <div class="doc-md-description">
               <p>Estimate a and b parameters of SMAP function based on given <code>R0</code>, <code>Dmax</code> and <code>Dmin</code>.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            estimate_ab_old_manual (thmd.calc.colvar.SMAP.estimate_ab_old_manual)" href="../api/#thmd.calc.colvar.SMAP.estimate_ab_old_manual">estimate_ab_old_manual</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            estimate_ab_old_manual(target_Dmin, target_Dmax, init_a=None, init_b=None, tol=0.001, search_step=0.1) (thmd.calc.colvar.SMAP.estimate_ab_old_manual)" href="../api/#thmd.calc.colvar.SMAP.estimate_ab_old_manual">estimate_ab_old_manual</a></code></b>
             –
             <div class="doc-md-description">
               <p>Estimate a and b parameters of SMAP function based on given <code>R0</code>, <code>Dmax</code> and <code>Dmin</code>.</p>
@@ -3684,8 +3645,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            a
-
+          <b><code><a class="autorefs autorefs-internal" title="            a = a
 
   
       instance-attribute
@@ -3696,8 +3656,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            b
-
+          <b><code><a class="autorefs autorefs-internal" title="            b = b
 
   
       instance-attribute
@@ -3708,8 +3667,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            d0
-
+          <b><code><a class="autorefs autorefs-internal" title="            d0 = d0
 
   
       instance-attribute
@@ -3720,8 +3678,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            r0
-
+          <b><code><a class="autorefs autorefs-internal" title="            r0 = r0
 
   
       instance-attribute
@@ -3732,8 +3689,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            tol
-
+          <b><code><a class="autorefs autorefs-internal" title="            tol = tol
 
   
       instance-attribute
@@ -3761,16 +3717,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.SMAP.a" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">a</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">a</span> <span class="o">=</span> <span class="n">a</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.SMAP.a" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">a</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3784,16 +3738,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.SMAP.b" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">b</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">b</span> <span class="o">=</span> <span class="n">b</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.SMAP.b" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3807,16 +3759,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.SMAP.d0" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">d0</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.SMAP.d0" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3830,16 +3780,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.SMAP.r0" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">r0</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">r0</span> <span class="o">=</span> <span class="n">r0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.SMAP.r0" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">r0</span> <span class="o">=</span> <span class="n">r0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3853,16 +3801,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.SMAP.tol" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">tol</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">tol</span> <span class="o">=</span> <span class="n">tol</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.SMAP.tol" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">tol</span> <span class="o">=</span> <span class="n">tol</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3878,12 +3824,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.SMAP.eval" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">eval</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="nb">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.SMAP.eval" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3897,12 +3841,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.SMAP.findDmax" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">findDmax</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">findDmax</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.SMAP.findDmax" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">findDmax</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3916,12 +3858,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.SMAP.findDmin" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">findDmin</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">findDmin</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.SMAP.findDmin" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">findDmin</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3935,12 +3875,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.SMAP.find_Dmin_Dmax" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">find_Dmin_Dmax</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">find_Dmin_Dmax</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.SMAP.find_Dmin_Dmax" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_Dmin_Dmax</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3956,12 +3894,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.SMAP.estimate_ab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">estimate_ab</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">estimate_ab</span><span class="p">(</span><span class="n">target_Dmin</span><span class="p">,</span> <span class="n">target_Dmax</span><span class="p">,</span> <span class="n">init_a</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">init_b</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.SMAP.estimate_ab" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">estimate_ab</span><span class="p">(</span><span class="n">target_Dmin</span><span class="p">,</span> <span class="n">target_Dmax</span><span class="p">,</span> <span class="n">init_a</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">init_b</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4052,12 +3988,10 @@ This version employs <code>scipy.optimize.minimize</code></p>
 
 
 <h4 id="thmd.calc.colvar.SMAP.estimate_ab_old_manual" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">estimate_ab_old_manual</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">estimate_ab_old_manual</span><span class="p">(</span><span class="n">target_Dmin</span><span class="p">,</span> <span class="n">target_Dmax</span><span class="p">,</span> <span class="n">init_a</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">init_b</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">search_step</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.SMAP.estimate_ab_old_manual" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">estimate_ab_old_manual</span><span class="p">(</span><span class="n">target_Dmin</span><span class="p">,</span> <span class="n">target_Dmax</span><span class="p">,</span> <span class="n">init_a</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">init_b</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">search_step</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4161,7 +4095,7 @@ This version use manual search.</p>
 
 
 <h3 id="thmd.calc.colvar.cv_CoordNum" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">cv_CoordNum</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>cv_CoordNum</code>
 
 
 <a href="#thmd.calc.colvar.cv_CoordNum" class="headerlink" title="Permanent link">¤</a></h3>
@@ -4183,7 +4117,7 @@ This version use manual search.</p>
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            coord_number (thmd.calc.colvar.cv_CoordNum.coord_number)" href="../api/#thmd.calc.colvar.cv_CoordNum.coord_number">coord_number</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            coord_number(Points, **kwargs) (thmd.calc.colvar.cv_CoordNum.coord_number)" href="../api/#thmd.calc.colvar.cv_CoordNum.coord_number">coord_number</a></code></b>
             –
             <div class="doc-md-description">
               <p>The Coordination is the size of input "Points", this function just weight it with a switching function</p>
@@ -4210,12 +4144,10 @@ This version use manual search.</p>
 
 
 <h4 id="thmd.calc.colvar.cv_CoordNum.coord_number" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">coord_number</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">coord_number</span><span class="p">(</span><span class="n">Points</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.cv_CoordNum.coord_number" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">coord_number</span><span class="p">(</span><span class="n">Points</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4247,7 +4179,7 @@ By Cao Thang, Aug 2020</p>
 
 
 <h3 id="thmd.calc.colvar.cv_PairANGLE" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">cv_PairANGLE</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>cv_PairANGLE</code>
 
 
 <a href="#thmd.calc.colvar.cv_PairANGLE" class="headerlink" title="Permanent link">¤</a></h3>
@@ -4269,7 +4201,7 @@ By Cao Thang, Aug 2020</p>
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            PairANGLE (thmd.calc.colvar.cv_PairANGLE.PairANGLE)" href="../api/#thmd.calc.colvar.cv_PairANGLE.PairANGLE">PairANGLE</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            PairANGLE(Points, CENTER, SIGMA, **kwargs) (thmd.calc.colvar.cv_PairANGLE.PairANGLE)" href="../api/#thmd.calc.colvar.cv_PairANGLE.PairANGLE">PairANGLE</a></code></b>
             –
             <div class="doc-md-description">
               <p>Order Parameter based on pair functions of Angles in the first shell:</p>
@@ -4296,12 +4228,10 @@ By Cao Thang, Aug 2020</p>
 
 
 <h4 id="thmd.calc.colvar.cv_PairANGLE.PairANGLE" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">PairANGLE</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">PairANGLE</span><span class="p">(</span><span class="n">Points</span><span class="p">,</span> <span class="n">CENTER</span><span class="p">,</span> <span class="n">SIGMA</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.cv_PairANGLE.PairANGLE" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">PairANGLE</span><span class="p">(</span><span class="n">Points</span><span class="p">,</span> <span class="n">CENTER</span><span class="p">,</span> <span class="n">SIGMA</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4363,7 +4293,7 @@ switchFunc=[1,1...,1] : Nx1 array, contain values of switching function s(Rj) (R
 
 
 <h3 id="thmd.calc.colvar.cv_Steinhardt" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">cv_Steinhardt</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>cv_Steinhardt</code>
 
 
 <a href="#thmd.calc.colvar.cv_Steinhardt" class="headerlink" title="Permanent link">¤</a></h3>
@@ -4385,14 +4315,14 @@ switchFunc=[1,1...,1] : Nx1 array, contain values of switching function s(Rj) (R
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            Ql_Steinhardt (thmd.calc.colvar.cv_Steinhardt.Ql_Steinhardt)" href="../api/#thmd.calc.colvar.cv_Steinhardt.Ql_Steinhardt">Ql_Steinhardt</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            Ql_Steinhardt(ql_i) (thmd.calc.colvar.cv_Steinhardt.Ql_Steinhardt)" href="../api/#thmd.calc.colvar.cv_Steinhardt.Ql_Steinhardt">Ql_Steinhardt</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute origincal Stainhardt of l-th order</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            Local_Ql_Steinhardt (thmd.calc.colvar.cv_Steinhardt.Local_Ql_Steinhardt)" href="../api/#thmd.calc.colvar.cv_Steinhardt.Local_Ql_Steinhardt">Local_Ql_Steinhardt</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            Local_Ql_Steinhardt(ql_i, qlm_j, SW) (thmd.calc.colvar.cv_Steinhardt.Local_Ql_Steinhardt)" href="../api/#thmd.calc.colvar.cv_Steinhardt.Local_Ql_Steinhardt">Local_Ql_Steinhardt</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute Local Stainhardt of l-th order (modified Steinhardt as: 10.1021/acs.jctc.6b01073)</p>
@@ -4419,12 +4349,10 @@ switchFunc=[1,1...,1] : Nx1 array, contain values of switching function s(Rj) (R
 
 
 <h4 id="thmd.calc.colvar.cv_Steinhardt.Ql_Steinhardt" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">Ql_Steinhardt</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">Ql_Steinhardt</span><span class="p">(</span><span class="n">ql_i</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.cv_Steinhardt.Ql_Steinhardt" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">Ql_Steinhardt</span><span class="p">(</span><span class="n">ql_i</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4444,12 +4372,10 @@ Returns:
 
 
 <h4 id="thmd.calc.colvar.cv_Steinhardt.Local_Ql_Steinhardt" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">Local_Ql_Steinhardt</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">Local_Ql_Steinhardt</span><span class="p">(</span><span class="n">ql_i</span><span class="p">,</span> <span class="n">qlm_j</span><span class="p">,</span> <span class="n">SW</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.cv_Steinhardt.Local_Ql_Steinhardt" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">Local_Ql_Steinhardt</span><span class="p">(</span><span class="n">ql_i</span><span class="p">,</span> <span class="n">qlm_j</span><span class="p">,</span> <span class="n">SW</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4480,7 +4406,7 @@ Returns:
 
 
 <h3 id="thmd.calc.colvar.cv_fccCUBIC" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">cv_fccCUBIC</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>cv_fccCUBIC</code>
 
 
 <a href="#thmd.calc.colvar.cv_fccCUBIC" class="headerlink" title="Permanent link">¤</a></h3>
@@ -4502,7 +4428,7 @@ Returns:
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            fccCUBIC (thmd.calc.colvar.cv_fccCUBIC.fccCUBIC)" href="../api/#thmd.calc.colvar.cv_fccCUBIC.fccCUBIC">fccCUBIC</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            fccCUBIC(points, alpha=27, zDirect='001', switch_function=None) (thmd.calc.colvar.cv_fccCUBIC.fccCUBIC)" href="../api/#thmd.calc.colvar.cv_fccCUBIC.fccCUBIC">fccCUBIC</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to Calculate FCC CUBIC parameters.</p>
@@ -4529,12 +4455,10 @@ Returns:
 
 
 <h4 id="thmd.calc.colvar.cv_fccCUBIC.fccCUBIC" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">fccCUBIC</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">fccCUBIC</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">27</span><span class="p">,</span> <span class="n">zDirect</span><span class="o">=</span><span class="s1">&#39;001&#39;</span><span class="p">,</span> <span class="n">switch_function</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.cv_fccCUBIC.fccCUBIC" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fccCUBIC</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">27</span><span class="p">,</span> <span class="n">zDirect</span><span class="o">=</span><span class="s1">&#39;001&#39;</span><span class="p">,</span> <span class="n">switch_function</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4625,7 +4549,7 @@ Returns:
 
 
 <h3 id="thmd.calc.colvar.cv_localCRYSTALLINITY" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">cv_localCRYSTALLINITY</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>cv_localCRYSTALLINITY</code>
 
 
 <a href="#thmd.calc.colvar.cv_localCRYSTALLINITY" class="headerlink" title="Permanent link">¤</a></h3>
@@ -4647,14 +4571,14 @@ Returns:
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            localCRYSTALLINITY (thmd.calc.colvar.cv_localCRYSTALLINITY.localCRYSTALLINITY)" href="../api/#thmd.calc.colvar.cv_localCRYSTALLINITY.localCRYSTALLINITY">localCRYSTALLINITY</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            localCRYSTALLINITY(points: np.array, g_vectors: list[list], switch_function=None) (thmd.calc.colvar.cv_localCRYSTALLINITY.localCRYSTALLINITY)" href="../api/#thmd.calc.colvar.cv_localCRYSTALLINITY.localCRYSTALLINITY">localCRYSTALLINITY</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to Calculate Order Parameter with multi_vectors K.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            compute_Gvectors_FCC (thmd.calc.colvar.cv_localCRYSTALLINITY.compute_Gvectors_FCC)" href="../api/#thmd.calc.colvar.cv_localCRYSTALLINITY.compute_Gvectors_FCC">compute_Gvectors_FCC</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            compute_Gvectors_FCC(g_directions: list[list] = [[1, 0, 0]], lattice_constant: float = 1.0, zDirect: str = '001') -> list[list] (thmd.calc.colvar.cv_localCRYSTALLINITY.compute_Gvectors_FCC)" href="../api/#thmd.calc.colvar.cv_localCRYSTALLINITY.compute_Gvectors_FCC">compute_Gvectors_FCC</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to convert reciprocal vectors G to be used in <code>localCRYSTALLINITY</code>.</p>
@@ -4681,12 +4605,10 @@ Returns:
 
 
 <h4 id="thmd.calc.colvar.cv_localCRYSTALLINITY.localCRYSTALLINITY" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">localCRYSTALLINITY</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">localCRYSTALLINITY</span><span class="p">(</span><span class="n">points</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="n">g_vectors</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">],</span> <span class="n">switch_function</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.cv_localCRYSTALLINITY.localCRYSTALLINITY" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">localCRYSTALLINITY</span><span class="p">(</span><span class="n">points</span><span class="p">:</span> <span class="n">array</span><span class="p">,</span> <span class="n">g_vectors</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">],</span> <span class="n">switch_function</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4763,12 +4685,10 @@ Returns:
 
 
 <h4 id="thmd.calc.colvar.cv_localCRYSTALLINITY.compute_Gvectors_FCC" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">compute_Gvectors_FCC</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">compute_Gvectors_FCC</span><span class="p">(</span><span class="n">g_directions</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">]</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]],</span> <span class="n">lattice_constant</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">zDirect</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;001&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">]</span></code>
 
 <a href="#thmd.calc.colvar.cv_localCRYSTALLINITY.compute_Gvectors_FCC" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">compute_Gvectors_FCC</span><span class="p">(</span><span class="n">g_directions</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">]</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]],</span> <span class="n">lattice_constant</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">zDirect</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;001&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4840,7 +4760,7 @@ Returns:
 
 
 <h3 id="thmd.calc.colvar.cv_slip_atom" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">cv_slip_atom</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>cv_slip_atom</code>
 
 
 <a href="#thmd.calc.colvar.cv_slip_atom" class="headerlink" title="Permanent link">¤</a></h3>
@@ -4862,7 +4782,7 @@ Returns:
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            slip_atom (thmd.calc.colvar.cv_slip_atom.slip_atom)" href="../api/#thmd.calc.colvar.cv_slip_atom.slip_atom">slip_atom</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            slip_atom(points, d_ref, d_diff) (thmd.calc.colvar.cv_slip_atom.slip_atom)" href="../api/#thmd.calc.colvar.cv_slip_atom.slip_atom">slip_atom</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to Calculate FCC CUBIC parameters.</p>
@@ -4889,12 +4809,10 @@ Returns:
 
 
 <h4 id="thmd.calc.colvar.cv_slip_atom.slip_atom" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">slip_atom</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">slip_atom</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">d_ref</span><span class="p">,</span> <span class="n">d_diff</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.cv_slip_atom.slip_atom" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">slip_atom</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">d_ref</span><span class="p">,</span> <span class="n">d_diff</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -4970,7 +4888,7 @@ Returns:
 
 
 <h3 id="thmd.calc.colvar.find_neighbor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">find_neighbor</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>find_neighbor</code>
 
 
 <a href="#thmd.calc.colvar.find_neighbor" class="headerlink" title="Permanent link">¤</a></h3>
@@ -4992,14 +4910,14 @@ Returns:
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_neighbor_gen (thmd.calc.colvar.find_neighbor.find_neighbor_gen)" href="../api/#thmd.calc.colvar.find_neighbor.find_neighbor_gen">find_neighbor_gen</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_neighbor_gen(points: Union[np.array, list[list]], box: Union[np.array, list[list]], bound_cond: list = [1, 1, 1], cutoff_neighbor=None, k_neighbor=None, k_cutoff=20, keep_ref=False) -> Generator[list, list[list], None] (thmd.calc.colvar.find_neighbor.find_neighbor_gen)" href="../api/#thmd.calc.colvar.find_neighbor.find_neighbor_gen">find_neighbor_gen</a></code></b>
             –
             <div class="doc-md-description">
               <p>find Nearest_Neighbors, return generator of Nearest_IDs, "Nearest relative-Position vetors from atom i"</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_neighbor_list (thmd.calc.colvar.find_neighbor.find_neighbor_list)" href="../api/#thmd.calc.colvar.find_neighbor.find_neighbor_list">find_neighbor_list</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_neighbor_list(points, box, bound_cond=[1, 1, 1], cutoff_neighbor=None, k_neighbor=None, k_cutoff=20, keep_ref=False) (thmd.calc.colvar.find_neighbor.find_neighbor_list)" href="../api/#thmd.calc.colvar.find_neighbor.find_neighbor_list">find_neighbor_list</a></code></b>
             –
             <div class="doc-md-description">
               <p>find Nearest_Neighbors, return list of Nearest_IDs, "Nearest relative-Position vetors from atom i"</p>
@@ -5026,12 +4944,10 @@ Returns:
 
 
 <h4 id="thmd.calc.colvar.find_neighbor.find_neighbor_gen" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">find_neighbor_gen</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">find_neighbor_gen</span><span class="p">(</span><span class="n">points</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">]],</span> <span class="n">box</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">]],</span> <span class="n">bound_cond</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">cutoff_neighbor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">k_neighbor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">k_cutoff</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">keep_ref</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Generator</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">],</span> <span class="kc">None</span><span class="p">]</span></code>
 
 <a href="#thmd.calc.colvar.find_neighbor.find_neighbor_gen" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_neighbor_gen</span><span class="p">(</span><span class="n">points</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">array</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">]],</span> <span class="n">box</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">array</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">]],</span> <span class="n">bound_cond</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">cutoff_neighbor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">k_neighbor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">k_cutoff</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">keep_ref</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Generator</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">list</span><span class="p">[</span><span class="nb">list</span><span class="p">],</span> <span class="kc">None</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5138,12 +5054,10 @@ Ver 2: spatial.cKDTree</p>
 
 
 <h4 id="thmd.calc.colvar.find_neighbor.find_neighbor_list" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">find_neighbor_list</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">find_neighbor_list</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">bound_cond</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">cutoff_neighbor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">k_neighbor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">k_cutoff</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">keep_ref</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.find_neighbor.find_neighbor_list" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_neighbor_list</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">bound_cond</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">cutoff_neighbor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">k_neighbor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">k_cutoff</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">keep_ref</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5260,7 +5174,7 @@ Rij_Bonds (np.array): Nx1 list of scalars, contain Rij_bonds from Ref.atom to Ne
 
 
 <h3 id="thmd.calc.colvar.sph_harmonics" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">sph_harmonics</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>sph_harmonics</code>
 
 
 <a href="#thmd.calc.colvar.sph_harmonics" class="headerlink" title="Permanent link">¤</a></h3>
@@ -5282,7 +5196,7 @@ Rij_Bonds (np.array): Nx1 list of scalars, contain Rij_bonds from Ref.atom to Ne
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            yl_i (thmd.calc.colvar.sph_harmonics.yl_i)" href="../api/#thmd.calc.colvar.sph_harmonics.yl_i">yl_i</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            yl_i(l, Rij, SW=None, kind='real', normalization='4pi', deg=False) (thmd.calc.colvar.sph_harmonics.yl_i)" href="../api/#thmd.calc.colvar.sph_harmonics.yl_i">yl_i</a></code></b>
             –
             <div class="doc-md-description">
               <p>Compute vector of Spherical Harmonics for a set of point (ylm vector have (2l+1) components)</p>
@@ -5309,12 +5223,10 @@ Rij_Bonds (np.array): Nx1 list of scalars, contain Rij_bonds from Ref.atom to Ne
 
 
 <h4 id="thmd.calc.colvar.sph_harmonics.yl_i" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">yl_i</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">yl_i</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">Rij</span><span class="p">,</span> <span class="n">SW</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;real&#39;</span><span class="p">,</span> <span class="n">normalization</span><span class="o">=</span><span class="s1">&#39;4pi&#39;</span><span class="p">,</span> <span class="n">deg</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.sph_harmonics.yl_i" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">yl_i</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">Rij</span><span class="p">,</span> <span class="n">SW</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;real&#39;</span><span class="p">,</span> <span class="n">normalization</span><span class="o">=</span><span class="s1">&#39;4pi&#39;</span><span class="p">,</span> <span class="n">deg</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5424,7 +5336,7 @@ Rij_Bonds (np.array): Nx1 list of scalars, contain Rij_bonds from Ref.atom to Ne
 
 
 <h3 id="thmd.calc.colvar.switch_function" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">switch_function</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>switch_function</code>
 
 
 <a href="#thmd.calc.colvar.switch_function" class="headerlink" title="Permanent link">¤</a></h3>
@@ -5444,28 +5356,28 @@ Rij_Bonds (np.array): Nx1 list of scalars, contain Rij_bonds from Ref.atom to Ne
 <p><span class="doc-section-title">Classes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            RATIONAL (thmd.calc.colvar.switch_function.RATIONAL)" href="../api/#thmd.calc.colvar.switch_function.RATIONAL">RATIONAL</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              RATIONAL(r0, d0=0.0, n=6, m=12, dmax_tol=0.001) (thmd.calc.colvar.switch_function.RATIONAL)" href="../api/#thmd.calc.colvar.switch_function.RATIONAL">RATIONAL</a></code></b>
           –
           <div class="doc-md-description">
             <p>Create an Object of SWITCHING FUNCTION</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            HEAVISIDE (thmd.calc.colvar.switch_function.HEAVISIDE)" href="../api/#thmd.calc.colvar.switch_function.HEAVISIDE">HEAVISIDE</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              HEAVISIDE(r0) (thmd.calc.colvar.switch_function.HEAVISIDE)" href="../api/#thmd.calc.colvar.switch_function.HEAVISIDE">HEAVISIDE</a></code></b>
           –
           <div class="doc-md-description">
             
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            CUBIC (thmd.calc.colvar.switch_function.CUBIC)" href="../api/#thmd.calc.colvar.switch_function.CUBIC">CUBIC</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              CUBIC(d0, dmax) (thmd.calc.colvar.switch_function.CUBIC)" href="../api/#thmd.calc.colvar.switch_function.CUBIC">CUBIC</a></code></b>
           –
           <div class="doc-md-description">
             <p>Create an Object of SWITCHING FUNCTION</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            SMAP (thmd.calc.colvar.switch_function.SMAP)" href="../api/#thmd.calc.colvar.switch_function.SMAP">SMAP</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              SMAP(r0, a=10, b=20, d0=0, tol=0.0001) (thmd.calc.colvar.switch_function.SMAP)" href="../api/#thmd.calc.colvar.switch_function.SMAP">SMAP</a></code></b>
           –
           <div class="doc-md-description">
             
@@ -5494,12 +5406,10 @@ Rij_Bonds (np.array): Nx1 list of scalars, contain Rij_bonds from Ref.atom to Ne
 
 
 <h4 id="thmd.calc.colvar.switch_function.RATIONAL" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">RATIONAL</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">RATIONAL</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">d0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">dmax_tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.RATIONAL" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">RATIONAL</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">d0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">dmax_tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5589,14 +5499,14 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            eval (thmd.calc.colvar.switch_function.RATIONAL.eval)" href="../api/#thmd.calc.colvar.switch_function.RATIONAL.eval">eval</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            eval(x, compute_der=False) (thmd.calc.colvar.switch_function.RATIONAL.eval)" href="../api/#thmd.calc.colvar.switch_function.RATIONAL.eval">eval</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute &amp; return value and derivation of sw function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            dmax (thmd.calc.colvar.switch_function.RATIONAL.dmax)" href="../api/#thmd.calc.colvar.switch_function.RATIONAL.dmax">dmax</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            dmax(dmax_tol) (thmd.calc.colvar.switch_function.RATIONAL.dmax)" href="../api/#thmd.calc.colvar.switch_function.RATIONAL.dmax">dmax</a></code></b>
             –
             <div class="doc-md-description">
               
@@ -5610,8 +5520,7 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            r0
-
+          <b><code><a class="autorefs autorefs-internal" title="            r0 = r0
 
   
       instance-attribute
@@ -5622,8 +5531,7 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            d0
-
+          <b><code><a class="autorefs autorefs-internal" title="            d0 = d0
 
   
       instance-attribute
@@ -5634,8 +5542,7 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            n
-
+          <b><code><a class="autorefs autorefs-internal" title="            n = n
 
   
       instance-attribute
@@ -5646,8 +5553,7 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            m
-
+          <b><code><a class="autorefs autorefs-internal" title="            m = m
 
   
       instance-attribute
@@ -5675,16 +5581,14 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.RATIONAL.r0" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">r0</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">r0</span> <span class="o">=</span> <span class="n">r0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.RATIONAL.r0" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">r0</span> <span class="o">=</span> <span class="n">r0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5698,16 +5602,14 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.RATIONAL.d0" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">d0</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.RATIONAL.d0" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5721,16 +5623,14 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.RATIONAL.n" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">n</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">n</span> <span class="o">=</span> <span class="n">n</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.RATIONAL.n" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">n</span> <span class="o">=</span> <span class="n">n</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5744,16 +5644,14 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.RATIONAL.m" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">m</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">m</span> <span class="o">=</span> <span class="n">m</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.RATIONAL.m" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">m</span> <span class="o">=</span> <span class="n">m</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5769,12 +5667,10 @@ Dmin, Dmax : are the bounds at which the switching take affect</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.RATIONAL.eval" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">eval</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="nb">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.RATIONAL.eval" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5791,12 +5687,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.RATIONAL.dmax" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">dmax</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">dmax</span><span class="p">(</span><span class="n">dmax_tol</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.RATIONAL.dmax" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">dmax</span><span class="p">(</span><span class="n">dmax_tol</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5819,12 +5713,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.switch_function.HEAVISIDE" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">HEAVISIDE</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">HEAVISIDE</span><span class="p">(</span><span class="n">r0</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.HEAVISIDE" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">HEAVISIDE</span><span class="p">(</span><span class="n">r0</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5845,14 +5737,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            eval (thmd.calc.colvar.switch_function.HEAVISIDE.eval)" href="../api/#thmd.calc.colvar.switch_function.HEAVISIDE.eval">eval</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            eval(x: Union[float, list, np.ndarray]) -> np.ndarray (thmd.calc.colvar.switch_function.HEAVISIDE.eval)" href="../api/#thmd.calc.colvar.switch_function.HEAVISIDE.eval">eval</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute value of sw function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            der (thmd.calc.colvar.switch_function.HEAVISIDE.der)" href="../api/#thmd.calc.colvar.switch_function.HEAVISIDE.der">der</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            der(x: float | list | np.ndarray) -> np.ndarray (thmd.calc.colvar.switch_function.HEAVISIDE.der)" href="../api/#thmd.calc.colvar.switch_function.HEAVISIDE.der">der</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute derivative of sw function</p>
@@ -5866,8 +5758,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            dmax
-
+          <b><code><a class="autorefs autorefs-internal" title="            dmax = r0
 
   
       instance-attribute
@@ -5895,16 +5786,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.HEAVISIDE.dmax" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">dmax</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">dmax</span> <span class="o">=</span> <span class="n">r0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.HEAVISIDE.dmax" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">dmax</span> <span class="o">=</span> <span class="n">r0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5920,12 +5809,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.HEAVISIDE.eval" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">eval</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="nb">eval</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">list</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.HEAVISIDE.eval" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">eval</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">list</span><span class="p">,</span> <span class="n">ndarray</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5941,12 +5828,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.HEAVISIDE.der" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">der</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">der</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.HEAVISIDE.der" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">der</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="nb">float</span> <span class="o">|</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">ndarray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -5971,12 +5856,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.switch_function.CUBIC" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">CUBIC</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">CUBIC</span><span class="p">(</span><span class="n">d0</span><span class="p">,</span> <span class="n">dmax</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.CUBIC" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">CUBIC</span><span class="p">(</span><span class="n">d0</span><span class="p">,</span> <span class="n">dmax</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6038,7 +5921,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            eval (thmd.calc.colvar.switch_function.CUBIC.eval)" href="../api/#thmd.calc.colvar.switch_function.CUBIC.eval">eval</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            eval(x, compute_der=False) (thmd.calc.colvar.switch_function.CUBIC.eval)" href="../api/#thmd.calc.colvar.switch_function.CUBIC.eval">eval</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute &amp; return value and derivation of sw function</p>
@@ -6052,8 +5935,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            d0
-
+          <b><code><a class="autorefs autorefs-internal" title="            d0 = d0
 
   
       instance-attribute
@@ -6064,8 +5946,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            dmax
-
+          <b><code><a class="autorefs autorefs-internal" title="            dmax = dmax
 
   
       instance-attribute
@@ -6093,16 +5974,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.CUBIC.d0" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">d0</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.CUBIC.d0" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6116,16 +5995,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.CUBIC.dmax" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">dmax</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">dmax</span> <span class="o">=</span> <span class="n">dmax</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.CUBIC.dmax" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">dmax</span> <span class="o">=</span> <span class="n">dmax</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6141,12 +6018,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.CUBIC.eval" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">eval</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="nb">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.CUBIC.eval" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6203,12 +6078,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h4 id="thmd.calc.colvar.switch_function.SMAP" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">SMAP</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">SMAP</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">d0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">SMAP</span><span class="p">(</span><span class="n">r0</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">d0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6229,42 +6102,42 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            eval (thmd.calc.colvar.switch_function.SMAP.eval)" href="../api/#thmd.calc.colvar.switch_function.SMAP.eval">eval</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            eval(x, compute_der=False) (thmd.calc.colvar.switch_function.SMAP.eval)" href="../api/#thmd.calc.colvar.switch_function.SMAP.eval">eval</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            findDmax (thmd.calc.colvar.switch_function.SMAP.findDmax)" href="../api/#thmd.calc.colvar.switch_function.SMAP.findDmax">findDmax</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            findDmax(tol=None, upper_bound=100, gridSize=0.0001) (thmd.calc.colvar.switch_function.SMAP.findDmax)" href="../api/#thmd.calc.colvar.switch_function.SMAP.findDmax">findDmax</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            findDmin (thmd.calc.colvar.switch_function.SMAP.findDmin)" href="../api/#thmd.calc.colvar.switch_function.SMAP.findDmin">findDmin</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            findDmin(tol=None, lower_bound=None, gridSize=0.0001) (thmd.calc.colvar.switch_function.SMAP.findDmin)" href="../api/#thmd.calc.colvar.switch_function.SMAP.findDmin">findDmin</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_Dmin_Dmax (thmd.calc.colvar.switch_function.SMAP.find_Dmin_Dmax)" href="../api/#thmd.calc.colvar.switch_function.SMAP.find_Dmin_Dmax">find_Dmin_Dmax</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_Dmin_Dmax(tol=None, gridSize=0.0001, upper_bound=50) (thmd.calc.colvar.switch_function.SMAP.find_Dmin_Dmax)" href="../api/#thmd.calc.colvar.switch_function.SMAP.find_Dmin_Dmax">find_Dmin_Dmax</a></code></b>
             –
             <div class="doc-md-description">
               <p>find Dmin and Dmax of function based on given tolerance</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            estimate_ab (thmd.calc.colvar.switch_function.SMAP.estimate_ab)" href="../api/#thmd.calc.colvar.switch_function.SMAP.estimate_ab">estimate_ab</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            estimate_ab(target_Dmin, target_Dmax, init_a=None, init_b=None, tol=0.001) (thmd.calc.colvar.switch_function.SMAP.estimate_ab)" href="../api/#thmd.calc.colvar.switch_function.SMAP.estimate_ab">estimate_ab</a></code></b>
             –
             <div class="doc-md-description">
               <p>Estimate a and b parameters of SMAP function based on given <code>R0</code>, <code>Dmax</code> and <code>Dmin</code>.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            estimate_ab_old_manual (thmd.calc.colvar.switch_function.SMAP.estimate_ab_old_manual)" href="../api/#thmd.calc.colvar.switch_function.SMAP.estimate_ab_old_manual">estimate_ab_old_manual</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            estimate_ab_old_manual(target_Dmin, target_Dmax, init_a=None, init_b=None, tol=0.001, search_step=0.1) (thmd.calc.colvar.switch_function.SMAP.estimate_ab_old_manual)" href="../api/#thmd.calc.colvar.switch_function.SMAP.estimate_ab_old_manual">estimate_ab_old_manual</a></code></b>
             –
             <div class="doc-md-description">
               <p>Estimate a and b parameters of SMAP function based on given <code>R0</code>, <code>Dmax</code> and <code>Dmin</code>.</p>
@@ -6278,8 +6151,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 <p><span class="doc-section-title">Attributes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            a
-
+          <b><code><a class="autorefs autorefs-internal" title="            a = a
 
   
       instance-attribute
@@ -6290,8 +6162,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            b
-
+          <b><code><a class="autorefs autorefs-internal" title="            b = b
 
   
       instance-attribute
@@ -6302,8 +6173,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            d0
-
+          <b><code><a class="autorefs autorefs-internal" title="            d0 = d0
 
   
       instance-attribute
@@ -6314,8 +6184,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            r0
-
+          <b><code><a class="autorefs autorefs-internal" title="            r0 = r0
 
   
       instance-attribute
@@ -6326,8 +6195,7 @@ Input x can be a scalar or a 1d numpy ndarray</p>
           </div>
         </li>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            tol
-
+          <b><code><a class="autorefs autorefs-internal" title="            tol = tol
 
   
       instance-attribute
@@ -6355,16 +6223,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.SMAP.a" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">a</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">a</span> <span class="o">=</span> <span class="n">a</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP.a" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">a</span> <span class="o">=</span> <span class="n">a</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6378,16 +6244,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.SMAP.b" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">b</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">b</span> <span class="o">=</span> <span class="n">b</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP.b" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">b</span> <span class="o">=</span> <span class="n">b</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6401,16 +6265,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.SMAP.d0" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">d0</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP.d0" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">d0</span> <span class="o">=</span> <span class="n">d0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6424,16 +6286,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.SMAP.r0" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">r0</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">r0</span> <span class="o">=</span> <span class="n">r0</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP.r0" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">r0</span> <span class="o">=</span> <span class="n">r0</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6447,16 +6307,14 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.SMAP.tol" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <span class="doc doc-object-name doc-attribute-name">tol</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-attribute"></code>            <code class="highlight language-python"><span class="n">tol</span> <span class="o">=</span> <span class="n">tol</span></code>
 
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
   </span>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP.tol" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">tol</span> <span class="o">=</span> <span class="n">tol</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6472,12 +6330,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.SMAP.eval" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">eval</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="nb">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP.eval" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">eval</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">compute_der</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6491,12 +6347,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.SMAP.findDmax" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">findDmax</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">findDmax</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP.findDmax" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">findDmax</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6510,12 +6364,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.SMAP.findDmin" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">findDmin</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">findDmin</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP.findDmin" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">findDmin</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">lower_bound</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6529,12 +6381,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.SMAP.find_Dmin_Dmax" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">find_Dmin_Dmax</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">find_Dmin_Dmax</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP.find_Dmin_Dmax" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_Dmin_Dmax</span><span class="p">(</span><span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">gridSize</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">upper_bound</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6550,12 +6400,10 @@ Input x can be a scalar or a 1d numpy ndarray</p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.SMAP.estimate_ab" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">estimate_ab</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">estimate_ab</span><span class="p">(</span><span class="n">target_Dmin</span><span class="p">,</span> <span class="n">target_Dmax</span><span class="p">,</span> <span class="n">init_a</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">init_b</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP.estimate_ab" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">estimate_ab</span><span class="p">(</span><span class="n">target_Dmin</span><span class="p">,</span> <span class="n">target_Dmax</span><span class="p">,</span> <span class="n">init_a</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">init_b</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6646,12 +6494,10 @@ This version employs <code>scipy.optimize.minimize</code></p>
 
 
 <h5 id="thmd.calc.colvar.switch_function.SMAP.estimate_ab_old_manual" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">estimate_ab_old_manual</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">estimate_ab_old_manual</span><span class="p">(</span><span class="n">target_Dmin</span><span class="p">,</span> <span class="n">target_Dmax</span><span class="p">,</span> <span class="n">init_a</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">init_b</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">search_step</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.switch_function.SMAP.estimate_ab_old_manual" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">estimate_ab_old_manual</span><span class="p">(</span><span class="n">target_Dmin</span><span class="p">,</span> <span class="n">target_Dmax</span><span class="p">,</span> <span class="n">init_a</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">init_b</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">search_step</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6762,7 +6608,7 @@ This version use manual search.</p>
 
 
 <h3 id="thmd.calc.colvar.voronoi" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">voronoi</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>voronoi</code>
 
 
 <a href="#thmd.calc.colvar.voronoi" class="headerlink" title="Permanent link">¤</a></h3>
@@ -6782,7 +6628,7 @@ This version use manual search.</p>
 <p><span class="doc-section-title">Classes:</span></p>
     <ul>
         <li class="doc-section-item field-body">
-          <b><code><a class="autorefs autorefs-internal" title="            Voro3D (thmd.calc.colvar.voronoi.Voro3D)" href="../api/#thmd.calc.colvar.voronoi.Voro3D">Voro3D</a></code></b>
+          <b><code><a class="autorefs autorefs-internal" title="              Voro3D() (thmd.calc.colvar.voronoi.Voro3D)" href="../api/#thmd.calc.colvar.voronoi.Voro3D">Voro3D</a></code></b>
           –
           <div class="doc-md-description">
             <p>Voro ++ library</p>
@@ -6796,14 +6642,14 @@ This version use manual search.</p>
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            layer_extractor (thmd.calc.colvar.voronoi.layer_extractor)" href="../api/#thmd.calc.colvar.voronoi.layer_extractor">layer_extractor</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            layer_extractor(P, bound_cond=(1, 1, 0), layer_num=1, max_edge=3.0, surf_deep=15, method='max_face_perimeter') (thmd.calc.colvar.voronoi.layer_extractor)" href="../api/#thmd.calc.colvar.voronoi.layer_extractor">layer_extractor</a></code></b>
             –
             <div class="doc-md-description">
               <p>Extract atoms of outermost layers, based on Voronoi analysis</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            surface_detect (thmd.calc.colvar.voronoi.surface_detect)" href="../api/#thmd.calc.colvar.voronoi.surface_detect">surface_detect</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            surface_detect(P, bound_cond=(1, 1, 0), max_edge=3.0, surf_deep=15, method='max_face_perimeter') (thmd.calc.colvar.voronoi.surface_detect)" href="../api/#thmd.calc.colvar.voronoi.surface_detect">surface_detect</a></code></b>
             –
             <div class="doc-md-description">
               <p>Extract atoms on free surface, are atoms have Voronoi with max(faceArea) &gt;= max_edge**2</p>
@@ -6830,12 +6676,10 @@ This version use manual search.</p>
 
 
 <h4 id="thmd.calc.colvar.voronoi.Voro3D" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">Voro3D</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>              <code class="highlight language-python"><span class="n">Voro3D</span><span class="p">()</span></code>
 
 <a href="#thmd.calc.colvar.voronoi.Voro3D" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">Voro3D</span><span class="p">()</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6858,28 +6702,28 @@ This version use manual search.</p>
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            fAtomicVol_Bulk_gen (thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk_gen)" href="../api/#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk_gen">fAtomicVol_Bulk_gen</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            fAtomicVol_Bulk_gen(P, box, coord_number=False) (thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk_gen)" href="../api/#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk_gen">fAtomicVol_Bulk_gen</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute atomic-volume of each atom in Bulk models</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            fAtomicVol_Plate_gen (thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate_gen)" href="../api/#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate_gen">fAtomicVol_Plate_gen</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            fAtomicVol_Plate_gen(P, box, bound_cond=(1, 1, 0), max_edge=3.1, surf_deep=15, virtual_surface=True, offset=False, coord_number=False) (thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate_gen)" href="../api/#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate_gen">fAtomicVol_Plate_gen</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute atomic-volume of each atom in Plate models</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            fAtomicVol_Bulk (thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk)" href="../api/#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk">fAtomicVol_Bulk</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            fAtomicVol_Bulk(P, box, coord_number=False) (thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk)" href="../api/#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk">fAtomicVol_Bulk</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute atomic-volume of each atom in Bulk models</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            fAtomicVol_Plate (thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate)" href="../api/#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate">fAtomicVol_Plate</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            fAtomicVol_Plate(P, box, bound_cond=(1, 1, 0), max_edge=3.1, surf_deep=15, virtual_surface=True, offset=False, coord_number=False) (thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate)" href="../api/#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate">fAtomicVol_Plate</a></code></b>
             –
             <div class="doc-md-description">
               <p>compute atomic-volume of each atom in Plate models</p>
@@ -6907,12 +6751,10 @@ This version use manual search.</p>
 
 
 <h5 id="thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk_gen" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">fAtomicVol_Bulk_gen</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">fAtomicVol_Bulk_gen</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">coord_number</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk_gen" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fAtomicVol_Bulk_gen</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">coord_number</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6941,12 +6783,10 @@ Returns:
 
 
 <h5 id="thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate_gen" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">fAtomicVol_Plate_gen</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">fAtomicVol_Plate_gen</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">bound_cond</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">max_edge</span><span class="o">=</span><span class="mf">3.1</span><span class="p">,</span> <span class="n">surf_deep</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">virtual_surface</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">coord_number</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate_gen" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fAtomicVol_Plate_gen</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">bound_cond</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">max_edge</span><span class="o">=</span><span class="mf">3.1</span><span class="p">,</span> <span class="n">surf_deep</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">virtual_surface</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">coord_number</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -6977,12 +6817,10 @@ Returns:
 
 
 <h5 id="thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">fAtomicVol_Bulk</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">fAtomicVol_Bulk</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">coord_number</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Bulk" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fAtomicVol_Bulk</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">coord_number</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -7006,12 +6844,10 @@ Returns:
 
 
 <h5 id="thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">fAtomicVol_Plate</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">fAtomicVol_Plate</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">bound_cond</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">max_edge</span><span class="o">=</span><span class="mf">3.1</span><span class="p">,</span> <span class="n">surf_deep</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">virtual_surface</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">coord_number</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.voronoi.Voro3D.fAtomicVol_Plate" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">fAtomicVol_Plate</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">bound_cond</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">max_edge</span><span class="o">=</span><span class="mf">3.1</span><span class="p">,</span> <span class="n">surf_deep</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">virtual_surface</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">coord_number</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -7051,12 +6887,10 @@ Returns:
 
 
 <h4 id="thmd.calc.colvar.voronoi.layer_extractor" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">layer_extractor</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">layer_extractor</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">bound_cond</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">layer_num</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_edge</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">surf_deep</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;max_face_perimeter&#39;</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.voronoi.layer_extractor" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">layer_extractor</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">bound_cond</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">layer_num</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_edge</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">surf_deep</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;max_face_perimeter&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -7082,12 +6916,10 @@ By Cao Thang, Jan 2020</p>
 
 
 <h4 id="thmd.calc.colvar.voronoi.surface_detect" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">surface_detect</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">surface_detect</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">bound_cond</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">max_edge</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">surf_deep</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;max_face_perimeter&#39;</span><span class="p">)</span></code>
 
 <a href="#thmd.calc.colvar.voronoi.surface_detect" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">surface_detect</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">bound_cond</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">max_edge</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">surf_deep</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;max_face_perimeter&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 

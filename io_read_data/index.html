@@ -1507,7 +1507,7 @@
 
 
 <h2 id="thmd.io.read_data" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thmd.io.read_data</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thmd.io.read_data</code>
 
 
 <a href="#thmd.io.read_data" class="headerlink" title="Permanent link">¤</a></h2>
@@ -1531,42 +1531,42 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            matrix_lost (thmd.io.read_data.matrix_lost)" href="../api/#thmd.io.read_data.matrix_lost">matrix_lost</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            matrix_lost(file_name: str, header_line: int = None, column_names: list[str] = None, comment: str = '#', sep: str = ' ', read_note: bool = False) -> pl.DataFrame (thmd.io.read_data.matrix_lost)" href="../api/#thmd.io.read_data.matrix_lost">matrix_lost</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to read data in matrix form, in which number of values in each line are NOT equal (missing values)</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            matrix (thmd.io.read_data.matrix)" href="../api/#thmd.io.read_data.matrix">matrix</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            matrix(file_name: str, header_line: int = None, column_names: list[str] = None, usecols: tuple[int] = None) -> pl.DataFrame (thmd.io.read_data.matrix)" href="../api/#thmd.io.read_data.matrix">matrix</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to read Data that is as a regular matrix.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            logMFD (thmd.io.read_data.logMFD)" href="../api/#thmd.io.read_data.logMFD">logMFD</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            logMFD(file_name, dim=1) -> pl.DataFrame (thmd.io.read_data.logMFD)" href="../api/#thmd.io.read_data.logMFD">logMFD</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to read data from LogMFD calculation.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            lammps_var (thmd.io.read_data.lammps_var)" href="../api/#thmd.io.read_data.lammps_var">lammps_var</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            lammps_var(file_name, var_names=None) (thmd.io.read_data.lammps_var)" href="../api/#thmd.io.read_data.lammps_var">lammps_var</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to extract variable values from LAMMPS input file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            plumed_var (thmd.io.read_data.plumed_var)" href="../api/#thmd.io.read_data.plumed_var">plumed_var</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            plumed_var(file_name, var_name, block_name=None) (thmd.io.read_data.plumed_var)" href="../api/#thmd.io.read_data.plumed_var">plumed_var</a></code></b>
             –
             <div class="doc-md-description">
               <p>Function to extract variable values from PLUMED input file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            list_matrix_in_dir (thmd.io.read_data.list_matrix_in_dir)" href="../api/#thmd.io.read_data.list_matrix_in_dir">list_matrix_in_dir</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            list_matrix_in_dir(search_key='deform_', file_ext='.txt', read_note=False, recursive=True) (thmd.io.read_data.list_matrix_in_dir)" href="../api/#thmd.io.read_data.list_matrix_in_dir">list_matrix_in_dir</a></code></b>
             –
             <div class="doc-md-description">
               <p>read data from all *.txt files in current and sub-folders.</p>
@@ -1593,12 +1593,10 @@
 
 
 <h3 id="thmd.io.read_data.matrix_lost" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">matrix_lost</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">matrix_lost</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">header_line</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">column_names</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">comment</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">read_note</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span></code>
 
 <a href="#thmd.io.read_data.matrix_lost" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">matrix_lost</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">header_line</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">column_names</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">comment</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">read_note</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1700,12 +1698,10 @@ If both <code>column_names</code> and <code>header_line</code> are not available
 
 
 <h3 id="thmd.io.read_data.matrix" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">matrix</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">matrix</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">header_line</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">column_names</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">usecols</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span></code>
 
 <a href="#thmd.io.read_data.matrix" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">matrix</span><span class="p">(</span><span class="n">file_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">header_line</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">column_names</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">usecols</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1778,12 +1774,10 @@ If both <code>column_names</code> and <code>header_line</code> are not available
 
 
 <h3 id="thmd.io.read_data.logMFD" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">logMFD</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">logMFD</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span></code>
 
 <a href="#thmd.io.read_data.logMFD" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">logMFD</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1846,12 +1840,10 @@ If both <code>column_names</code> and <code>header_line</code> are not available
 
 
 <h3 id="thmd.io.read_data.lammps_var" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">lammps_var</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">lammps_var</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">var_names</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_data.lammps_var" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">lammps_var</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">var_names</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1902,12 +1894,10 @@ If both <code>column_names</code> and <code>header_line</code> are not available
 
 
 <h3 id="thmd.io.read_data.plumed_var" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">plumed_var</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">plumed_var</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">var_name</span><span class="p">,</span> <span class="n">block_name</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_data.plumed_var" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">plumed_var</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">var_name</span><span class="p">,</span> <span class="n">block_name</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -1971,12 +1961,10 @@ If both <code>column_names</code> and <code>header_line</code> are not available
 
 
 <h3 id="thmd.io.read_data.list_matrix_in_dir" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">list_matrix_in_dir</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">list_matrix_in_dir</span><span class="p">(</span><span class="n">search_key</span><span class="o">=</span><span class="s1">&#39;deform_&#39;</span><span class="p">,</span> <span class="n">file_ext</span><span class="o">=</span><span class="s1">&#39;.txt&#39;</span><span class="p">,</span> <span class="n">read_note</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
 
 <a href="#thmd.io.read_data.list_matrix_in_dir" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">list_matrix_in_dir</span><span class="p">(</span><span class="n">search_key</span><span class="o">=</span><span class="s1">&#39;deform_&#39;</span><span class="p">,</span> <span class="n">file_ext</span><span class="o">=</span><span class="s1">&#39;.txt&#39;</span><span class="p">,</span> <span class="n">read_note</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 

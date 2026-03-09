@@ -1851,7 +1851,7 @@
 
 
 <h2 id="thmd.fit" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">thmd.fit</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>thmd.fit</code>
 
 
 <a href="#thmd.fit" class="headerlink" title="Permanent link">¤</a></h2>
@@ -1899,49 +1899,49 @@
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            curve_intersect_shapely (thmd.fit.curve_intersect_shapely)" href="../api/#thmd.fit.curve_intersect_shapely">curve_intersect_shapely</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            curve_intersect_shapely(line1, line2) (thmd.fit.curve_intersect_shapely)" href="../api/#thmd.fit.curve_intersect_shapely">curve_intersect_shapely</a></code></b>
             –
             <div class="doc-md-description">
               <p>find the intersection points between 2 lines</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            polyfit (thmd.fit.polyfit)" href="../api/#thmd.fit.polyfit">polyfit</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            polyfit(x, y, deg=1, sigma_y=None, uncert=False, **kwargs) (thmd.fit.polyfit)" href="../api/#thmd.fit.polyfit">polyfit</a></code></b>
             –
             <div class="doc-md-description">
               <p>Polynomial fitting for y = f(x) relation, which returns uncertainties of coefficients.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_slope (thmd.fit.find_slope)" href="../api/#thmd.fit.find_slope">find_slope</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_slope(x, y) (thmd.fit.find_slope)" href="../api/#thmd.fit.find_slope">find_slope</a></code></b>
             –
             <div class="doc-md-description">
               <p>Compute slope of a linear relation y = A + B*x.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_roots (thmd.fit.find_roots)" href="../api/#thmd.fit.find_roots">find_roots</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_roots(x, y, order=1) (thmd.fit.find_roots)" href="../api/#thmd.fit.find_roots">find_roots</a></code></b>
             –
             <div class="doc-md-description">
               <p>find roots for y = f(x) relation in polynomial form.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_extrema (thmd.fit.find_extrema)" href="../api/#thmd.fit.find_extrema">find_extrema</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_extrema(x, y, order=2, retun_fit=False) (thmd.fit.find_extrema)" href="../api/#thmd.fit.find_extrema">find_extrema</a></code></b>
             –
             <div class="doc-md-description">
               <p>find extrema points (der=0) for y = f(x) relation in polynomial form.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_convergence (thmd.fit.find_convergence)" href="../api/#thmd.fit.find_convergence">find_convergence</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_convergence(x, y, tol=1e-06, grid_size=None, convergence_side='right') (thmd.fit.find_convergence)" href="../api/#thmd.fit.find_convergence">find_convergence</a></code></b>
             –
             <div class="doc-md-description">
               <p>y is a function of x, then find value of x that y converge with a tolerance &lt; tol.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            extrapolate (thmd.fit.extrapolate)" href="../api/#thmd.fit.extrapolate">extrapolate</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            extrapolate(x, y, left_side: list = None, right_side: list = None, grid_size=0.1) -> tuple[list, list] (thmd.fit.extrapolate)" href="../api/#thmd.fit.extrapolate">extrapolate</a></code></b>
             –
             <div class="doc-md-description">
               
@@ -1968,12 +1968,10 @@
 
 
 <h3 id="thmd.fit.curve_intersect_shapely" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">curve_intersect_shapely</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">curve_intersect_shapely</span><span class="p">(</span><span class="n">line1</span><span class="p">,</span> <span class="n">line2</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.curve_intersect_shapely" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">curve_intersect_shapely</span><span class="p">(</span><span class="n">line1</span><span class="p">,</span> <span class="n">line2</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2004,12 +2002,10 @@ Args:
 
 
 <h3 id="thmd.fit.polyfit" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">polyfit</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">deg</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">sigma_y</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">uncert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.polyfit" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">deg</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">sigma_y</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">uncert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2097,12 +2093,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h3 id="thmd.fit.find_slope" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">find_slope</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">find_slope</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.find_slope" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_slope</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2144,12 +2138,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h3 id="thmd.fit.find_roots" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">find_roots</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">find_roots</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.find_roots" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_roots</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2208,12 +2200,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h3 id="thmd.fit.find_extrema" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">find_extrema</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">find_extrema</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">retun_fit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.find_extrema" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_extrema</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">retun_fit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2282,12 +2272,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h3 id="thmd.fit.find_convergence" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">find_convergence</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">find_convergence</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">convergence_side</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.find_convergence" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_convergence</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">convergence_side</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2377,12 +2365,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h3 id="thmd.fit.extrapolate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">extrapolate</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">extrapolate</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">left_side</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">right_side</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">list</span><span class="p">]</span></code>
 
 <a href="#thmd.fit.extrapolate" class="headerlink" title="Permanent link">¤</a></h3>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">extrapolate</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">left_side</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">right_side</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">list</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2398,7 +2384,7 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h3 id="thmd.fit.curve_intersect" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">curve_intersect</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>curve_intersect</code>
 
 
 <a href="#thmd.fit.curve_intersect" class="headerlink" title="Permanent link">¤</a></h3>
@@ -2420,7 +2406,7 @@ The fitted polynomial(s) are in the form</p>
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            curve_intersect_shapely (thmd.fit.curve_intersect.curve_intersect_shapely)" href="../api/#thmd.fit.curve_intersect.curve_intersect_shapely">curve_intersect_shapely</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            curve_intersect_shapely(line1, line2) (thmd.fit.curve_intersect.curve_intersect_shapely)" href="../api/#thmd.fit.curve_intersect.curve_intersect_shapely">curve_intersect_shapely</a></code></b>
             –
             <div class="doc-md-description">
               <p>find the intersection points between 2 lines</p>
@@ -2447,12 +2433,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h4 id="thmd.fit.curve_intersect.curve_intersect_shapely" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">curve_intersect_shapely</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">curve_intersect_shapely</span><span class="p">(</span><span class="n">line1</span><span class="p">,</span> <span class="n">line2</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.curve_intersect.curve_intersect_shapely" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">curve_intersect_shapely</span><span class="p">(</span><span class="n">line1</span><span class="p">,</span> <span class="n">line2</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2483,12 +2467,10 @@ Args:
 
 
 <h4 id="thmd.fit.curve_intersect.___curve_intersect_numpy" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">___curve_intersect_numpy</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">___curve_intersect_numpy</span><span class="p">(</span><span class="n">curve1</span><span class="p">,</span> <span class="n">curve2</span><span class="p">,</span> <span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.curve_intersect.___curve_intersect_numpy" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">___curve_intersect_numpy</span><span class="p">(</span><span class="n">curve1</span><span class="p">,</span> <span class="n">curve2</span><span class="p">,</span> <span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2571,7 +2553,7 @@ Args:
 
 
 <h3 id="thmd.fit.fit_root" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">fit_root</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>fit_root</code>
 
 
 <a href="#thmd.fit.fit_root" class="headerlink" title="Permanent link">¤</a></h3>
@@ -2593,42 +2575,42 @@ Args:
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            polyfit (thmd.fit.fit_root.polyfit)" href="../api/#thmd.fit.fit_root.polyfit">polyfit</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            polyfit(x, y, deg=1, sigma_y=None, uncert=False, **kwargs) (thmd.fit.fit_root.polyfit)" href="../api/#thmd.fit.fit_root.polyfit">polyfit</a></code></b>
             –
             <div class="doc-md-description">
               <p>Polynomial fitting for y = f(x) relation, which returns uncertainties of coefficients.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_slope (thmd.fit.fit_root.find_slope)" href="../api/#thmd.fit.fit_root.find_slope">find_slope</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_slope(x, y) (thmd.fit.fit_root.find_slope)" href="../api/#thmd.fit.fit_root.find_slope">find_slope</a></code></b>
             –
             <div class="doc-md-description">
               <p>Compute slope of a linear relation y = A + B*x.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_roots (thmd.fit.fit_root.find_roots)" href="../api/#thmd.fit.fit_root.find_roots">find_roots</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_roots(x, y, order=1) (thmd.fit.fit_root.find_roots)" href="../api/#thmd.fit.fit_root.find_roots">find_roots</a></code></b>
             –
             <div class="doc-md-description">
               <p>find roots for y = f(x) relation in polynomial form.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_extrema (thmd.fit.fit_root.find_extrema)" href="../api/#thmd.fit.fit_root.find_extrema">find_extrema</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_extrema(x, y, order=2, retun_fit=False) (thmd.fit.fit_root.find_extrema)" href="../api/#thmd.fit.fit_root.find_extrema">find_extrema</a></code></b>
             –
             <div class="doc-md-description">
               <p>find extrema points (der=0) for y = f(x) relation in polynomial form.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            find_convergence (thmd.fit.fit_root.find_convergence)" href="../api/#thmd.fit.fit_root.find_convergence">find_convergence</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            find_convergence(x, y, tol=1e-06, grid_size=None, convergence_side='right') (thmd.fit.fit_root.find_convergence)" href="../api/#thmd.fit.fit_root.find_convergence">find_convergence</a></code></b>
             –
             <div class="doc-md-description">
               <p>y is a function of x, then find value of x that y converge with a tolerance &lt; tol.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            extrapolate (thmd.fit.fit_root.extrapolate)" href="../api/#thmd.fit.fit_root.extrapolate">extrapolate</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            extrapolate(x, y, left_side: list = None, right_side: list = None, grid_size=0.1) -> tuple[list, list] (thmd.fit.fit_root.extrapolate)" href="../api/#thmd.fit.fit_root.extrapolate">extrapolate</a></code></b>
             –
             <div class="doc-md-description">
               
@@ -2655,12 +2637,10 @@ Args:
 
 
 <h4 id="thmd.fit.fit_root.polyfit" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">polyfit</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">deg</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">sigma_y</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">uncert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.fit_root.polyfit" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">deg</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">sigma_y</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">uncert</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2748,12 +2728,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h4 id="thmd.fit.fit_root.find_slope" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">find_slope</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">find_slope</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.fit_root.find_slope" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_slope</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2795,12 +2773,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h4 id="thmd.fit.fit_root.find_roots" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">find_roots</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">find_roots</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.fit_root.find_roots" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_roots</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2859,12 +2835,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h4 id="thmd.fit.fit_root.find_extrema" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">find_extrema</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">find_extrema</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">retun_fit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.fit_root.find_extrema" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_extrema</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">retun_fit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -2933,12 +2907,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h4 id="thmd.fit.fit_root.find_convergence" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">find_convergence</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">find_convergence</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">convergence_side</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.fit_root.find_convergence" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">find_convergence</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-06</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">convergence_side</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3028,12 +3000,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h4 id="thmd.fit.fit_root.extrapolate" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">extrapolate</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">extrapolate</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">left_side</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">right_side</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">list</span><span class="p">]</span></code>
 
 <a href="#thmd.fit.fit_root.extrapolate" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">extrapolate</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">left_side</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">right_side</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">grid_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">list</span><span class="p">,</span> <span class="nb">list</span><span class="p">]</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3047,12 +3017,10 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h4 id="thmd.fit.fit_root.___uncertainty_weighted_fit_linear" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <span class="doc doc-object-name doc-function-name">___uncertainty_weighted_fit_linear</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">___uncertainty_weighted_fit_linear</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">sigma_y</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.fit_root.___uncertainty_weighted_fit_linear" class="headerlink" title="Permanent link">¤</a></h4>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">___uncertainty_weighted_fit_linear</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">sigma_y</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3128,7 +3096,7 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h3 id="thmd.fit.user_lmfit" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <span class="doc doc-object-name doc-module-name">user_lmfit</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-module"></code>            <code>user_lmfit</code>
 
 
 <a href="#thmd.fit.user_lmfit" class="headerlink" title="Permanent link">¤</a></h3>
@@ -3177,7 +3145,7 @@ The fitted polynomial(s) are in the form</p>
 
 
 <h4 id="thmd.fit.user_lmfit.UserLmfit" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <span class="doc doc-object-name doc-class-name">UserLmfit</span>
+<code class="doc-symbol doc-symbol-heading doc-symbol-class"></code>            <code>UserLmfit</code>
 
 
 <a href="#thmd.fit.user_lmfit.UserLmfit" class="headerlink" title="Permanent link">¤</a></h4>
@@ -3223,133 +3191,133 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 <p><span class="doc-section-title">Methods:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            Linear (thmd.fit.user_lmfit.UserLmfit.Linear)" href="../api/#thmd.fit.user_lmfit.UserLmfit.Linear">Linear</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            Linear(x, a0, a1) (thmd.fit.user_lmfit.UserLmfit.Linear)" href="../api/#thmd.fit.user_lmfit.UserLmfit.Linear">Linear</a></code></b>
             –
             <div class="doc-md-description">
               <p>this func is available in LMFIT, just play as an example here</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            inverseTemperature (thmd.fit.user_lmfit.UserLmfit.inverseTemperature)" href="../api/#thmd.fit.user_lmfit.UserLmfit.inverseTemperature">inverseTemperature</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            inverseTemperature(x, a, b) (thmd.fit.user_lmfit.UserLmfit.inverseTemperature)" href="../api/#thmd.fit.user_lmfit.UserLmfit.inverseTemperature">inverseTemperature</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            ExpDecay (thmd.fit.user_lmfit.UserLmfit.ExpDecay)" href="../api/#thmd.fit.user_lmfit.UserLmfit.ExpDecay">ExpDecay</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            ExpDecay(x, A, lambd) (thmd.fit.user_lmfit.UserLmfit.ExpDecay)" href="../api/#thmd.fit.user_lmfit.UserLmfit.ExpDecay">ExpDecay</a></code></b>
             –
             <div class="doc-md-description">
               
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sizeEffect (thmd.fit.user_lmfit.UserLmfit.sizeEffect)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sizeEffect">sizeEffect</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            sizeEffect(x, a, b) (thmd.fit.user_lmfit.UserLmfit.sizeEffect)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sizeEffect">sizeEffect</a></code></b>
             –
             <div class="doc-md-description">
               <p>system size-dependence on term N^(&#8532;</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            unNormalGaussian (thmd.fit.user_lmfit.UserLmfit.unNormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.unNormalGaussian">unNormalGaussian</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            unNormalGaussian(x, amp, cen, sig) (thmd.fit.user_lmfit.UserLmfit.unNormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.unNormalGaussian">unNormalGaussian</a></code></b>
             –
             <div class="doc-md-description">
               <p>The unNormalize Gaussian function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            NormalGaussian (thmd.fit.user_lmfit.UserLmfit.NormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.NormalGaussian">NormalGaussian</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            NormalGaussian(x, amp, cen, sig) (thmd.fit.user_lmfit.UserLmfit.NormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.NormalGaussian">NormalGaussian</a></code></b>
             –
             <div class="doc-md-description">
               <p>The Normalize Gaussian function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_2unNormalGaussian (thmd.fit.user_lmfit.UserLmfit.sum_2unNormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_2unNormalGaussian">sum_2unNormalGaussian</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            sum_2unNormalGaussian(x, amp1, amp2, cen1, cen2, sig1, sig2) (thmd.fit.user_lmfit.UserLmfit.sum_2unNormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_2unNormalGaussian">sum_2unNormalGaussian</a></code></b>
             –
             <div class="doc-md-description">
               <p>The sum of 2 Gaussian function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_3unNormalGaussian (thmd.fit.user_lmfit.UserLmfit.sum_3unNormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_3unNormalGaussian">sum_3unNormalGaussian</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            sum_3unNormalGaussian(x, amp1, amp2, amp3, cen1, cen2, cen3, sig1, sig2, sig3) (thmd.fit.user_lmfit.UserLmfit.sum_3unNormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_3unNormalGaussian">sum_3unNormalGaussian</a></code></b>
             –
             <div class="doc-md-description">
               <p>The sum of 3 Gaussian function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_4unNormalGaussian (thmd.fit.user_lmfit.UserLmfit.sum_4unNormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_4unNormalGaussian">sum_4unNormalGaussian</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            sum_4unNormalGaussian(x, amp1, amp2, amp3, amp4, cen1, cen2, cen3, cen4, sig1, sig2, sig3, sig4) (thmd.fit.user_lmfit.UserLmfit.sum_4unNormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_4unNormalGaussian">sum_4unNormalGaussian</a></code></b>
             –
             <div class="doc-md-description">
               <p>The sum of 4 Gaussian function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_5unNormalGaussian (thmd.fit.user_lmfit.UserLmfit.sum_5unNormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_5unNormalGaussian">sum_5unNormalGaussian</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            sum_5unNormalGaussian(x, amp1, amp2, amp3, amp4, amp5, cen1, cen2, cen3, cen4, cen5, sig1, sig2, sig3, sig4, sig5) (thmd.fit.user_lmfit.UserLmfit.sum_5unNormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_5unNormalGaussian">sum_5unNormalGaussian</a></code></b>
             –
             <div class="doc-md-description">
               <p>The sum of 5 Gaussian function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_2NormalGaussian (thmd.fit.user_lmfit.UserLmfit.sum_2NormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_2NormalGaussian">sum_2NormalGaussian</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            sum_2NormalGaussian(x, amp1, amp2, cen1, cen2, sig1, sig2) (thmd.fit.user_lmfit.UserLmfit.sum_2NormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_2NormalGaussian">sum_2NormalGaussian</a></code></b>
             –
             <div class="doc-md-description">
               <p>The sum of 2 Gaussian function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_3NormalGaussian (thmd.fit.user_lmfit.UserLmfit.sum_3NormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_3NormalGaussian">sum_3NormalGaussian</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            sum_3NormalGaussian(x, amp1, amp2, amp3, cen1, cen2, cen3, sig1, sig2, sig3) (thmd.fit.user_lmfit.UserLmfit.sum_3NormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_3NormalGaussian">sum_3NormalGaussian</a></code></b>
             –
             <div class="doc-md-description">
               <p>The sum of 3 Gaussian function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_4NormalGaussian (thmd.fit.user_lmfit.UserLmfit.sum_4NormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_4NormalGaussian">sum_4NormalGaussian</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            sum_4NormalGaussian(x, amp1, amp2, amp3, amp4, cen1, cen2, cen3, cen4, sig1, sig2, sig3, sig4) (thmd.fit.user_lmfit.UserLmfit.sum_4NormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_4NormalGaussian">sum_4NormalGaussian</a></code></b>
             –
             <div class="doc-md-description">
               <p>The sum of 4 Gaussian function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_5NormalGaussian (thmd.fit.user_lmfit.UserLmfit.sum_5NormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_5NormalGaussian">sum_5NormalGaussian</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            sum_5NormalGaussian(x, amp1, amp2, amp3, amp4, amp5, cen1, cen2, cen3, cen4, cen5, sig1, sig2, sig3, sig4, sig5) (thmd.fit.user_lmfit.UserLmfit.sum_5NormalGaussian)" href="../api/#thmd.fit.user_lmfit.UserLmfit.sum_5NormalGaussian">sum_5NormalGaussian</a></code></b>
             –
             <div class="doc-md-description">
               <p>The sum of 5 Gaussian function</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            DoseResp (thmd.fit.user_lmfit.UserLmfit.DoseResp)" href="../api/#thmd.fit.user_lmfit.UserLmfit.DoseResp">DoseResp</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            DoseResp(x, A1=-3.3, A2=-2.9, LOGx0=480000, p=1.2) (thmd.fit.user_lmfit.UserLmfit.DoseResp)" href="../api/#thmd.fit.user_lmfit.UserLmfit.DoseResp">DoseResp</a></code></b>
             –
             <div class="doc-md-description">
               <p>Dose-response curve with variable Hill slope given by parameter 'p'.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            BiDoseResp (thmd.fit.user_lmfit.UserLmfit.BiDoseResp)" href="../api/#thmd.fit.user_lmfit.UserLmfit.BiDoseResp">BiDoseResp</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            BiDoseResp(x, A1=-3.3, A2=-2.9, LOGx01=175000, LOGx02=480000, h1=0.1, h2=0.2, p=0.5) (thmd.fit.user_lmfit.UserLmfit.BiDoseResp)" href="../api/#thmd.fit.user_lmfit.UserLmfit.BiDoseResp">BiDoseResp</a></code></b>
             –
             <div class="doc-md-description">
               <p>Biphasic Dose Response Function,</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            Carreau (thmd.fit.user_lmfit.UserLmfit.Carreau)" href="../api/#thmd.fit.user_lmfit.UserLmfit.Carreau">Carreau</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            Carreau(x, A1=60, A2=3, t=3.0, a=2.2, n=0.3) (thmd.fit.user_lmfit.UserLmfit.Carreau)" href="../api/#thmd.fit.user_lmfit.UserLmfit.Carreau">Carreau</a></code></b>
             –
             <div class="doc-md-description">
               <p>Carreau-Yasuda model to describe pseudoplastic flow with asymptotic viscosities at zero and infinite shear rates</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            Cross (thmd.fit.user_lmfit.UserLmfit.Cross)" href="../api/#thmd.fit.user_lmfit.UserLmfit.Cross">Cross</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            Cross(x, A1=0.1, A2=3, t=1000, m=0.9) (thmd.fit.user_lmfit.UserLmfit.Cross)" href="../api/#thmd.fit.user_lmfit.UserLmfit.Cross">Cross</a></code></b>
             –
             <div class="doc-md-description">
               <p>Cross model to describe pseudoplastic flow with asymptotic viscosities at zero and infinite shear rates</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            GammaCFD (thmd.fit.user_lmfit.UserLmfit.GammaCFD)" href="../api/#thmd.fit.user_lmfit.UserLmfit.GammaCFD">GammaCFD</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            GammaCFD(x, y0, A1, a, b) (thmd.fit.user_lmfit.UserLmfit.GammaCFD)" href="../api/#thmd.fit.user_lmfit.UserLmfit.GammaCFD">GammaCFD</a></code></b>
             –
             <div class="doc-md-description">
               <p>Gamma cumulative distribution function</p>
@@ -3377,12 +3345,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.Linear" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">Linear</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">Linear</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.Linear" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">Linear</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a0</span><span class="p">,</span> <span class="n">a1</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3398,12 +3364,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.inverseTemperature" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">inverseTemperature</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">inverseTemperature</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.inverseTemperature" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">inverseTemperature</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3417,12 +3381,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.ExpDecay" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">ExpDecay</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">ExpDecay</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">lambd</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.ExpDecay" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">ExpDecay</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">lambd</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3436,12 +3398,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.sizeEffect" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">sizeEffect</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">sizeEffect</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.sizeEffect" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">sizeEffect</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3457,12 +3417,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.unNormalGaussian" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">unNormalGaussian</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">unNormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp</span><span class="p">,</span> <span class="n">cen</span><span class="p">,</span> <span class="n">sig</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.unNormalGaussian" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">unNormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp</span><span class="p">,</span> <span class="n">cen</span><span class="p">,</span> <span class="n">sig</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3478,12 +3436,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.NormalGaussian" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">NormalGaussian</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">NormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp</span><span class="p">,</span> <span class="n">cen</span><span class="p">,</span> <span class="n">sig</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.NormalGaussian" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">NormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp</span><span class="p">,</span> <span class="n">cen</span><span class="p">,</span> <span class="n">sig</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3499,12 +3455,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.sum_2unNormalGaussian" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">sum_2unNormalGaussian</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">sum_2unNormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.sum_2unNormalGaussian" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">sum_2unNormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3520,12 +3474,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.sum_3unNormalGaussian" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">sum_3unNormalGaussian</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">sum_3unNormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.sum_3unNormalGaussian" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">sum_3unNormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3541,12 +3493,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.sum_4unNormalGaussian" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">sum_4unNormalGaussian</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">sum_4unNormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">amp4</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">cen4</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">,</span> <span class="n">sig4</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.sum_4unNormalGaussian" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">sum_4unNormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">amp4</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">cen4</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">,</span> <span class="n">sig4</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3562,12 +3512,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.sum_5unNormalGaussian" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">sum_5unNormalGaussian</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">sum_5unNormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">amp4</span><span class="p">,</span> <span class="n">amp5</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">cen4</span><span class="p">,</span> <span class="n">cen5</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">,</span> <span class="n">sig4</span><span class="p">,</span> <span class="n">sig5</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.sum_5unNormalGaussian" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">sum_5unNormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">amp4</span><span class="p">,</span> <span class="n">amp5</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">cen4</span><span class="p">,</span> <span class="n">cen5</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">,</span> <span class="n">sig4</span><span class="p">,</span> <span class="n">sig5</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3583,12 +3531,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.sum_2NormalGaussian" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">sum_2NormalGaussian</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">sum_2NormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.sum_2NormalGaussian" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">sum_2NormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3604,12 +3550,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.sum_3NormalGaussian" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">sum_3NormalGaussian</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">sum_3NormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.sum_3NormalGaussian" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">sum_3NormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3625,12 +3569,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.sum_4NormalGaussian" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">sum_4NormalGaussian</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">sum_4NormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">amp4</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">cen4</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">,</span> <span class="n">sig4</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.sum_4NormalGaussian" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">sum_4NormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">amp4</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">cen4</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">,</span> <span class="n">sig4</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3646,12 +3588,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.sum_5NormalGaussian" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">sum_5NormalGaussian</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">sum_5NormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">amp4</span><span class="p">,</span> <span class="n">amp5</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">cen4</span><span class="p">,</span> <span class="n">cen5</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">,</span> <span class="n">sig4</span><span class="p">,</span> <span class="n">sig5</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.sum_5NormalGaussian" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">sum_5NormalGaussian</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">amp1</span><span class="p">,</span> <span class="n">amp2</span><span class="p">,</span> <span class="n">amp3</span><span class="p">,</span> <span class="n">amp4</span><span class="p">,</span> <span class="n">amp5</span><span class="p">,</span> <span class="n">cen1</span><span class="p">,</span> <span class="n">cen2</span><span class="p">,</span> <span class="n">cen3</span><span class="p">,</span> <span class="n">cen4</span><span class="p">,</span> <span class="n">cen5</span><span class="p">,</span> <span class="n">sig1</span><span class="p">,</span> <span class="n">sig2</span><span class="p">,</span> <span class="n">sig3</span><span class="p">,</span> <span class="n">sig4</span><span class="p">,</span> <span class="n">sig5</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3667,12 +3607,10 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.DoseResp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">DoseResp</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">DoseResp</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A1</span><span class="o">=-</span><span class="mf">3.3</span><span class="p">,</span> <span class="n">A2</span><span class="o">=-</span><span class="mf">2.9</span><span class="p">,</span> <span class="n">LOGx0</span><span class="o">=</span><span class="mi">480000</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">1.2</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.DoseResp" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">DoseResp</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A1</span><span class="o">=-</span><span class="mf">3.3</span><span class="p">,</span> <span class="n">A2</span><span class="o">=-</span><span class="mf">2.9</span><span class="p">,</span> <span class="n">LOGx0</span><span class="o">=</span><span class="mi">480000</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">1.2</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3693,12 +3631,10 @@ Initiate params: pars = mod.make_params(A1=-3.3, A2=-2.9, LOGx0=480000, p=1.2)</
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.BiDoseResp" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">BiDoseResp</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">BiDoseResp</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A1</span><span class="o">=-</span><span class="mf">3.3</span><span class="p">,</span> <span class="n">A2</span><span class="o">=-</span><span class="mf">2.9</span><span class="p">,</span> <span class="n">LOGx01</span><span class="o">=</span><span class="mi">175000</span><span class="p">,</span> <span class="n">LOGx02</span><span class="o">=</span><span class="mi">480000</span><span class="p">,</span> <span class="n">h1</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">h2</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.BiDoseResp" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">BiDoseResp</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A1</span><span class="o">=-</span><span class="mf">3.3</span><span class="p">,</span> <span class="n">A2</span><span class="o">=-</span><span class="mf">2.9</span><span class="p">,</span> <span class="n">LOGx01</span><span class="o">=</span><span class="mi">175000</span><span class="p">,</span> <span class="n">LOGx02</span><span class="o">=</span><span class="mi">480000</span><span class="p">,</span> <span class="n">h1</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">h2</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3719,12 +3655,10 @@ Initiate params: pars = mod.make_params(A1=0, A2=100, LOGx01=-8, LOGx02=-4, h1=0
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.Carreau" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">Carreau</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">Carreau</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A1</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">A2</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mf">2.2</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.Carreau" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">Carreau</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A1</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">A2</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mf">3.0</span><span class="p">,</span> <span class="n">a</span><span class="o">=</span><span class="mf">2.2</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3745,12 +3679,10 @@ Initiate params: pars = mod.make_params(A1=-3.3, A2=-2.9, t=2.0, a=2.2, n=0.2)</
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.Cross" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">Cross</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">Cross</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A1</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">A2</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.Cross" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">Cross</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A1</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">A2</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">t</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
@@ -3771,12 +3703,10 @@ Initiate params: pars = mod.make_params(A1=0.1, A2=3, t=1000, m=0.9)</p>
 
 
 <h5 id="thmd.fit.user_lmfit.UserLmfit.GammaCFD" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <span class="doc doc-object-name doc-function-name">GammaCFD</span>
-
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="n">GammaCFD</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">A1</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span></code>
 
 <a href="#thmd.fit.user_lmfit.UserLmfit.GammaCFD" class="headerlink" title="Permanent link">¤</a></h5>
-<div class="language-python doc-signature highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">GammaCFD</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">A1</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-</span></code></pre></div>
+
 
     <div class="doc doc-contents ">
 
