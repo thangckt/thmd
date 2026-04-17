@@ -1,11 +1,9 @@
-from pathlib import Path
-
 import requests
 
 
 def download_rawtext(url: str, outfile: str | None = None) -> str | None:
     """Download raw text from a URL."""
-    response = requests.get(url)  # ty:ignore[unresolved-attribute]
+    response = requests.get(url)
     if response.status_code == 200:
         text = response.text
     else:
@@ -13,7 +11,6 @@ def download_rawtext(url: str, outfile: str | None = None) -> str | None:
         text = None
 
     if text and outfile:
-        Path(outfile).parent.mkdir(parents=True, exist_ok=True)
         with open(outfile, "w") as f:
             f.write(text)
         print(f"File downloaded: {outfile}")
