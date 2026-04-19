@@ -20,7 +20,13 @@
         
       
       
-      <link rel="icon" href="../1images/one-note-128-o.png">
+      
+        
+        
+        
+          <link rel="icon" href="../1images/one-note-128-o.png">
+        
+      
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.3">
     
     
@@ -29,15 +35,16 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.6dc7b5bc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.9008998b.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.204eaadb.min.css">
       
-      
-
+    
+    
 
     
+
     
       
     
@@ -4020,10 +4027,16 @@ Note that in LAMMPS: 'Lorentz_Berthelot'='arithmetic'   <a href="https://tinyurl
 </code></pre></div>
 
 
-<details class="return" open>
-  <summary>Return</summary>
-  <p>list-of-string: contain pair_coeffs for LAMMPS</p>
-</details>
+<p><span class="doc-section-title">Returns:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          –
+          <div class="doc-md-description">
+            <p>list-of-string: contain pair_coeffs for LAMMPS</p>
+          </div>
+        </li>
+    </ul>
+
 
 <details class="notes" open>
   <summary>Notes</summary>
@@ -4031,17 +4044,35 @@ Note that in LAMMPS: 'Lorentz_Berthelot'='arithmetic'   <a href="https://tinyurl
 types in 2 dict must either completely different or indentical</p>
 </details>        <p>Examples:
 PMMA/h_BN interface
-<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">dict_group1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;element&#39;</span><span class="p">:[</span><span class="s1">&#39;CT&#39;</span><span class="p">,</span><span class="s1">&#39;CT&#39;</span><span class="p">,</span><span class="s1">&#39;CT&#39;</span><span class="p">,</span><span class="s1">&#39;CT&#39;</span><span class="p">,</span><span class="s1">&#39;HC&#39;</span><span class="p">,</span><span class="s1">&#39;HC&#39;</span><span class="p">,</span><span class="s1">&#39;C_2&#39;</span><span class="p">,</span><span class="s1">&#39;O_2&#39;</span><span class="p">,</span><span class="s1">&#39;OS&#39;</span><span class="p">,</span><span class="s1">&#39;CT&#39;</span><span class="p">,</span><span class="s1">&#39;HC&#39;</span><span class="p">],</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>        <span class="s1">&#39;atom_name&#39;</span><span class="p">:[</span><span class="s1">&#39;opls_135&#39;</span><span class="p">,</span><span class="s1">&#39;opls_136&#39;</span><span class="p">,</span><span class="s1">&#39;opls_137&#39;</span><span class="p">,</span><span class="s1">&#39;opls_139&#39;</span><span class="p">,</span><span class="s1">&#39;opls_140&#39;</span><span class="p">,</span><span class="s1">&#39;opls_282&#39;</span><span class="p">,</span><span class="s1">&#39;opls_465&#39;</span><span class="p">,</span><span class="s1">&#39;opls_466&#39;</span><span class="p">,</span><span class="s1">&#39;opls_467&#39;</span><span class="p">,</span><span class="s1">&#39;opls_468&#39;</span><span class="p">,</span><span class="s1">&#39;opls_469&#39;</span><span class="p">],</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="s1">&#39;type&#39;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">],</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="s1">&#39;sigma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">2.42</span><span class="p">,</span> <span class="mf">3.75</span><span class="p">,</span> <span class="mf">2.96</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">2.42</span><span class="p">],</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="s1">&#39;epsilon&#39;</span><span class="p">:[</span><span class="mf">0.066</span><span class="p">,</span> <span class="mf">0.066</span><span class="p">,</span> <span class="mf">0.066</span><span class="p">,</span> <span class="mf">0.066</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">,</span> <span class="mf">0.015</span><span class="p">,</span> <span class="mf">0.105</span><span class="p">,</span> <span class="mf">0.21</span><span class="p">,</span> <span class="mf">0.17</span><span class="p">,</span> <span class="mf">0.066</span><span class="p">,</span> <span class="mf">0.015</span><span class="p">]}</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">dict_group2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;element&#39;</span><span class="p">:[</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;N&#39;</span><span class="p">],</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                <span class="s1">&#39;atom_name&#39;</span><span class="p">:[</span><span class="s1">&#39;B&#39;</span><span class="p">,</span><span class="s1">&#39;N&#39;</span><span class="p">],</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                <span class="s1">&#39;type&#39;</span><span class="p">:[</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">],</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                <span class="s1">&#39;sigma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">3.453</span><span class="p">,</span> <span class="mf">3.365</span><span class="p">],</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                <span class="s1">&#39;epsilon&#39;</span><span class="p">:[</span><span class="mf">0.094988</span><span class="p">,</span> <span class="mf">0.1448671</span><span class="p">]}</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">combining_LJ</span><span class="p">(</span><span class="n">dict_group1</span><span class="p">,</span> <span class="n">dict_group2</span><span class="p">,</span> <span class="n">combining_rule</span><span class="o">=</span><span class="s1">&#39;Lorentz_Berthelot&#39;</span><span class="p">,</span> <span class="n">pair_style</span><span class="o">=</span><span class="s1">&#39;lj/cut/coul/long&#39;</span><span class="p">)</span>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">dict_group1</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="s2">&quot;element&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;CT&quot;</span><span class="p">,</span> <span class="s2">&quot;CT&quot;</span><span class="p">,</span> <span class="s2">&quot;CT&quot;</span><span class="p">,</span> <span class="s2">&quot;CT&quot;</span><span class="p">,</span> <span class="s2">&quot;HC&quot;</span><span class="p">,</span> <span class="s2">&quot;HC&quot;</span><span class="p">,</span> <span class="s2">&quot;C_2&quot;</span><span class="p">,</span> <span class="s2">&quot;O_2&quot;</span><span class="p">,</span> <span class="s2">&quot;OS&quot;</span><span class="p">,</span> <span class="s2">&quot;CT&quot;</span><span class="p">,</span> <span class="s2">&quot;HC&quot;</span><span class="p">],</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="s2">&quot;atom_name&quot;</span><span class="p">:</span> <span class="p">[</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="s2">&quot;opls_135&quot;</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="s2">&quot;opls_136&quot;</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="s2">&quot;opls_137&quot;</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="s2">&quot;opls_139&quot;</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="s2">&quot;opls_140&quot;</span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        <span class="s2">&quot;opls_282&quot;</span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="s2">&quot;opls_465&quot;</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="s2">&quot;opls_466&quot;</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        <span class="s2">&quot;opls_467&quot;</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="s2">&quot;opls_468&quot;</span><span class="p">,</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="s2">&quot;opls_469&quot;</span><span class="p">,</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="p">],</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">],</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="s2">&quot;sigma&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="mf">2.42</span><span class="p">,</span> <span class="mf">3.75</span><span class="p">,</span> <span class="mf">2.96</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">2.42</span><span class="p">],</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="s2">&quot;epsilon&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.066</span><span class="p">,</span> <span class="mf">0.066</span><span class="p">,</span> <span class="mf">0.066</span><span class="p">,</span> <span class="mf">0.066</span><span class="p">,</span> <span class="mf">0.03</span><span class="p">,</span> <span class="mf">0.015</span><span class="p">,</span> <span class="mf">0.105</span><span class="p">,</span> <span class="mf">0.21</span><span class="p">,</span> <span class="mf">0.17</span><span class="p">,</span> <span class="mf">0.066</span><span class="p">,</span> <span class="mf">0.015</span><span class="p">],</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="p">}</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="n">dict_group2</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    <span class="s2">&quot;element&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span><span class="p">],</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    <span class="s2">&quot;atom_name&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span><span class="p">],</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">],</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="s2">&quot;sigma&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">3.453</span><span class="p">,</span> <span class="mf">3.365</span><span class="p">],</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="s2">&quot;epsilon&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.094988</span><span class="p">,</span> <span class="mf">0.1448671</span><span class="p">],</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="p">}</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="n">combining_LJ</span><span class="p">(</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>    <span class="n">dict_group1</span><span class="p">,</span> <span class="n">dict_group2</span><span class="p">,</span> <span class="n">combining_rule</span><span class="o">=</span><span class="s2">&quot;Lorentz_Berthelot&quot;</span><span class="p">,</span> <span class="n">pair_style</span><span class="o">=</span><span class="s2">&quot;lj/cut/coul/long&quot;</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="p">)</span>
 </span></code></pre></div></p>
 
           
@@ -6158,7 +6189,7 @@ source code: <a href="https://github.com/polysimtools/pysimm">https://github.com
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.annotate", "content.code.copy", "navigation.expand", "navigation.indexes", "navigation.tracking", "navigation.top", "search.suggest", "content.action.edit", "navigation.footer", "toc.follow", "navigation.tabs", "navigation.tabs.sticky", "navigation.tabs.header"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.cf77aabc.min.js"></script>
+      <script src="../assets/javascripts/bundle.d67e244a.min.js"></script>
       
         <script src="../1thang_js/page_logVisitor.js"></script>
       
