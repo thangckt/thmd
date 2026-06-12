@@ -11370,8 +11370,12 @@ Args:
       <a href="../io_read_block/#thmd.io.read_block"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;read_block</a>
   </span>
 
-            <span class="doc doc-backlink-crumb last">
+            <span class="doc doc-backlink-crumb">
       <a href="../io_read_block/#thmd.io.read_block.PlumHistogram"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;PlumHistogram</a>
+  </span>
+
+            <span class="doc doc-backlink-crumb last">
+      <a href="../io_read_block/#thmd.io.read_block.PlumHistogram.read_histogram"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;read_histogram</a>
   </span>
 
       </li>
@@ -15532,7 +15536,7 @@ beta (float):</p>
 <p><span class="doc-section-title">Functions:</span></p>
     <ul>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            get_citekeys(tex_files: Union[str, list]) -> list (thmd.post.latex.get_citekeys)" href="#thmd.post.latex.get_citekeys">get_citekeys</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            get_citekeys(tex_files: str | list) -> list (thmd.post.latex.get_citekeys)" href="#thmd.post.latex.get_citekeys">get_citekeys</a></code></b>
             –
             <div class="doc-md-description">
               <p>Extract all citekeys from a list of <code>.tex</code> files.</p>
@@ -15542,18 +15546,18 @@ beta (float):</p>
             <b><code><a class="autorefs autorefs-internal" title="            select_entries(citekeys: list, bib_file: str) -> BibliographyData (thmd.post.latex.select_entries)" href="#thmd.post.latex.select_entries">select_entries</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Select bibliography entries from a Bibtex <code>.bib</code> file</p>
+              <p>Select bibliography entries from a Bibtex <code>.bib</code> file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
             <b><code><a class="autorefs autorefs-internal" title="            write_bibtex(bib_data: BibliographyData, out_file: str = 'reference.bib') -> None (thmd.post.latex.write_bibtex)" href="#thmd.post.latex.write_bibtex">write_bibtex</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Write bibliography data to a Bibtex <code>.bib</code> file</p>
+              <p>Write bibliography data to a Bibtex <code>.bib</code> file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            minimize_bibtex(tex_files: Union[str, list], bib_file: str, out_file: str = 'reference_min.bib') -> None (thmd.post.latex.minimize_bibtex)" href="#thmd.post.latex.minimize_bibtex">minimize_bibtex</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            minimize_bibtex(tex_files: str | list, bib_file: str, out_file: str = 'reference_min.bib') -> None (thmd.post.latex.minimize_bibtex)" href="#thmd.post.latex.minimize_bibtex">minimize_bibtex</a></code></b>
             –
             <div class="doc-md-description">
               <p>Minimize the <code>.bib</code> file so that it contains only entries that are cited in the <code>.tex</code> files.</p>
@@ -15567,14 +15571,14 @@ beta (float):</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            tex2doc(tex_file: str, out_file: str = 'output.docx', bib_file: str = None, **kwargs) (thmd.post.latex.tex2doc)" href="#thmd.post.latex.tex2doc">tex2doc</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            tex2doc(tex_file: str, out_file: str = 'output.docx', bib_file: str | None = None, **kwargs) (thmd.post.latex.tex2doc)" href="#thmd.post.latex.tex2doc">tex2doc</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert a Latex source <code>.tex</code> file to a Microsoft Word <code>.docx</code> file.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            tex2pdf(tex_file: str, out_file: str = 'output.pdf', bib_file: str = None, **kwargs) (thmd.post.latex.tex2pdf)" href="#thmd.post.latex.tex2pdf">tex2pdf</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            tex2pdf(tex_file: str, out_file: str = 'output.pdf', bib_file: str | None = None, **kwargs) (thmd.post.latex.tex2pdf)" href="#thmd.post.latex.tex2pdf">tex2pdf</a></code></b>
             –
             <div class="doc-md-description">
               <p>Convert a Latex source <code>.tex</code> file to a Microsoft Word <code>.docx</code> file.</p>
@@ -15662,7 +15666,7 @@ beta (float):</p>
 
     <div class="doc doc-contents ">
 
-        <p>check if pandoc is installed or not. If not, raise an error.</p>
+        <p>Check if pandoc is installed or not. If not, raise an error.</p>
 
           
 
@@ -15674,7 +15678,7 @@ beta (float):</p>
 
 
 <h5 id="thmd.post.latex.get_citekeys" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">get_citekeys</span><span class="p">(</span><span class="n">tex_files</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">list</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">get_citekeys</span><span class="p">(</span><span class="n">tex_files</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span></code>
 
 <a href="#thmd.post.latex.get_citekeys" class="headerlink" title="Permanent link">¤</a></h5>
 
@@ -15725,7 +15729,7 @@ beta (float):</p>
 
     <div class="doc doc-contents ">
 
-        <p>Select bibliography entries from a Bibtex <code>.bib</code> file</p>
+        <p>Select bibliography entries from a Bibtex <code>.bib</code> file.</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -15777,7 +15781,7 @@ beta (float):</p>
 
     <div class="doc doc-contents ">
 
-        <p>Write bibliography data to a Bibtex <code>.bib</code> file</p>
+        <p>Write bibliography data to a Bibtex <code>.bib</code> file.</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -15812,7 +15816,7 @@ beta (float):</p>
 
 
 <h5 id="thmd.post.latex.minimize_bibtex" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">minimize_bibtex</span><span class="p">(</span><span class="n">tex_files</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">],</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;reference_min.bib&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">minimize_bibtex</span><span class="p">(</span><span class="n">tex_files</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">,</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;reference_min.bib&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
 
 <a href="#thmd.post.latex.minimize_bibtex" class="headerlink" title="Permanent link">¤</a></h5>
 
@@ -15934,7 +15938,8 @@ beta (float):</p>
 
 <p><span class="doc-section-title">Examples:</span></p>
     <div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thml.latex</span><span class="w"> </span><span class="kn">import</span> <span class="n">check_bibtex</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">check_bibtex</span><span class="p">(</span><span class="s1">&#39;reference.bib&#39;</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">check_bibtex</span><span class="p">(</span><span class="s2">&quot;reference.bib&quot;</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </span></code></pre></div>
 
           
@@ -15947,7 +15952,7 @@ beta (float):</p>
 
 
 <h5 id="thmd.post.latex.tex2doc" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tex2doc</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;output.docx&#39;</span><span class="p">,</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tex2doc</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;output.docx&#39;</span><span class="p">,</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thmd.post.latex.tex2doc" class="headerlink" title="Permanent link">¤</a></h5>
 
@@ -15956,9 +15961,9 @@ beta (float):</p>
 
         <p>Convert a Latex source <code>.tex</code> file to a Microsoft Word <code>.docx</code> file.
 Need to install <code>pandoc</code> and <code>panflute</code> first.
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">condac</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">pandoc</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">pip</span> <span class="n">install</span> <span class="n">panflute</span>
-</span></code></pre></div></p>
+<code>python
+condac install -c conda-forge pandoc
+pip install panflute</code>.</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -16048,7 +16053,7 @@ Need to install <code>pandoc</code> and <code>panflute</code> first.
 
 
 <h5 id="thmd.post.latex.tex2pdf" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tex2pdf</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;output.pdf&#39;</span><span class="p">,</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">tex2pdf</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">out_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;output.pdf&#39;</span><span class="p">,</span> <span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#thmd.post.latex.tex2pdf" class="headerlink" title="Permanent link">¤</a></h5>
 
