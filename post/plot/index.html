@@ -1623,14 +1623,16 @@
 <p>Assume we have a data frame <code>df</code>:
 <div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">polars</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pl</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">})</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;x&quot;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">})</span>
 </span></code></pre></div></p>
 <p>Then, use the <code>Plotter().plt</code> to plot the data as a normal <code>matplotlib.pyplot</code> object. Adapt all functions from <code>matplotlib.pyplot</code>.
 <div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thmd.plot</span><span class="w"> </span><span class="kn">import</span> <span class="n">Plotter</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">plt</span> <span class="o">=</span> <span class="n">Plotter</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s1">&#39;thang&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">plt</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">])</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">plt</span> <span class="o">=</span> <span class="n">Plotter</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;thang&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">plt</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">])</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </span></code></pre></div></p>
 
 
@@ -1675,7 +1677,7 @@
             <b><code><a class="autorefs autorefs-internal" title="            custom_styles() (thmd.post.plot.custom_styles)" href="../../api/#thmd.post.plot.custom_styles">custom_styles</a></code></b>
             –
             <div class="doc-md-description">
-              <p>style for matplotlib</p>
+              <p>Style for matplotlib.</p>
             </div>
           </li>
     </ul>
@@ -1714,8 +1716,9 @@
 
 <p><span class="doc-section-title">Examples:</span></p>
     <div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">thmd.post.plot</span><span class="w"> </span><span class="kn">import</span> <span class="n">Plotter</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">plt</span> <span class="o">=</span> <span class="n">Plotter</span><span class="p">()</span><span class="o">.</span><span class="n">get_plt</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s1">&#39;thang&#39;</span><span class="p">)</span>  <span class="c1"># shortcut to matplotlib.pyplot</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">])</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">plt</span> <span class="o">=</span> <span class="n">Plotter</span><span class="p">()</span><span class="o">.</span><span class="n">get_plt</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;thang&quot;</span><span class="p">)</span>  <span class="c1"># shortcut to matplotlib.pyplot</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;y&quot;</span><span class="p">])</span>
 </span></code></pre></div>
 
           
@@ -1743,14 +1746,14 @@
             <b><code><a class="autorefs autorefs-internal" title="            set_minor_locator(ax: object, xminor=1, yminor=1) (thmd.post.plot.Plotter.set_minor_locator)" href="../../api/#thmd.post.plot.Plotter.set_minor_locator">set_minor_locator</a></code></b>
             –
             <div class="doc-md-description">
-              <p>Set minor locator for axes</p>
+              <p>Set minor locator for axes.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
             <b><code><a class="autorefs autorefs-internal" title="            get_PdfPages() (thmd.post.plot.Plotter.get_PdfPages)" href="../../api/#thmd.post.plot.Plotter.get_PdfPages">get_PdfPages</a></code></b>
             –
             <div class="doc-md-description">
-              <p>shortcut to <code>matplotlib.backends.backend_pdf.PdfPages</code>.</p>
+              <p>Shortcut to <code>matplotlib.backends.backend_pdf.PdfPages</code>.</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
@@ -1941,7 +1944,7 @@
 
     <div class="doc doc-contents ">
 
-        <p>Set minor locator for axes</p>
+        <p>Set minor locator for axes.</p>
 
           
 
@@ -1960,7 +1963,7 @@
 
     <div class="doc doc-contents ">
 
-        <p>shortcut to <code>matplotlib.backends.backend_pdf.PdfPages</code>.</p>
+        <p>Shortcut to <code>matplotlib.backends.backend_pdf.PdfPages</code>.</p>
 
           
 
@@ -2007,7 +2010,7 @@
 
     <div class="doc doc-contents ">
 
-        <p>style for matplotlib</p>
+        <p>Style for matplotlib.</p>
 
           
 
