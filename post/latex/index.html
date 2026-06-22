@@ -1627,7 +1627,7 @@
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            check_bibtex(bib_file: str, verbose: bool = True, logfile: bool = False, lower_key=False) -> list (thmd.post.latex.check_bibtex)" href="../../api/#thmd.post.latex.check_bibtex">check_bibtex</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            check_bibtex(bib_file: str, verbose: bool = True, logfile: bool = False, lower_key=False) -> None (thmd.post.latex.check_bibtex)" href="../../api/#thmd.post.latex.check_bibtex">check_bibtex</a></code></b>
             –
             <div class="doc-md-description">
               <p>Check for missing fields in the bibtex entries. Based on the <code>type</code> of the entry, there are <a href="https://www.bibtex.com/e/entry-types/">mandatory fields</a>. This function is to check if any of mandatory fields is missing.</p>
@@ -1648,7 +1648,7 @@
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            replace_acronyms(tex_file: str, acronyms: dict) -> list (thmd.post.latex.replace_acronyms)" href="../../api/#thmd.post.latex.replace_acronyms">replace_acronyms</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            replace_acronyms(tex_file: str, acronyms: dict) -> dict (thmd.post.latex.replace_acronyms)" href="../../api/#thmd.post.latex.replace_acronyms">replace_acronyms</a></code></b>
             –
             <div class="doc-md-description">
               <p>Check and replace if acronyms are used in a <code>.tex</code> file.</p>
@@ -1696,7 +1696,7 @@
     <ul>
         <li class="doc-section-item field-body">
             <b><code>tex_files</code></b>
-              (<code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>]</code>)
+              (<code><span title="Union">Union</span>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>]</code>)
           –
           <div class="doc-md-description">
             <p>paths to <code>.tex</code> files</p>
@@ -1834,7 +1834,7 @@
     <ul>
         <li class="doc-section-item field-body">
             <b><code>tex_files</code></b>
-              (<code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>]</code>)
+              (<code><span title="Union">Union</span>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>]</code>)
           –
           <div class="doc-md-description">
             <p>path to <code>.tex</code> files</p>
@@ -1870,7 +1870,7 @@
 
 
 <h3 id="thmd.post.latex.check_bibtex" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_bibtex</span><span class="p">(</span><span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">lower_key</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_bibtex</span><span class="p">(</span><span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">lower_key</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
 
 <a href="#thmd.post.latex.check_bibtex" class="headerlink" title="Permanent link">¤</a></h3>
 
@@ -2121,7 +2121,7 @@ pip install panflute</code>.</p>
 
 
 <h3 id="thmd.post.latex.replace_acronyms" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">replace_acronyms</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">acronyms</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">replace_acronyms</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">acronyms</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
 <a href="#thmd.post.latex.replace_acronyms" class="headerlink" title="Permanent link">¤</a></h3>
 

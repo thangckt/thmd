@@ -8593,7 +8593,7 @@ thickness       : thickness of plate</p>
             <b><code><a class="autorefs autorefs-internal" title="            curve_intersect_shapely(line1, line2) (thmd.fit.curve_intersect_shapely)" href="#thmd.fit.curve_intersect_shapely">curve_intersect_shapely</a></code></b>
             –
             <div class="doc-md-description">
-              <p>find the intersection points between 2 lines</p>
+              <p>Find the intersection points between 2 lines</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
@@ -8666,10 +8666,10 @@ thickness       : thickness of plate</p>
 
     <div class="doc doc-contents ">
 
-        <p>find the intersection points between 2 lines
+        <p>Find the intersection points between 2 lines
 Args:
-        line1 (array like): Nx2 arrays, contains data points of curve 1
-        line2 (array like): Nx2 arrays, contains data points of curve 2</p>
+    line1 (array like): Nx2 arrays, contains data points of curve 1
+    line2 (array like): Nx2 arrays, contains data points of curve 2.</p>
 
 
 <p><span class="doc-section-title">Returns:</span></p>
@@ -9115,7 +9115,7 @@ Args:
             <b><code><a class="autorefs autorefs-internal" title="            curve_intersect_shapely(line1, line2) (thmd.fit.curve_intersect.curve_intersect_shapely)" href="#thmd.fit.curve_intersect.curve_intersect_shapely">curve_intersect_shapely</a></code></b>
             –
             <div class="doc-md-description">
-              <p>find the intersection points between 2 lines</p>
+              <p>Find the intersection points between 2 lines</p>
             </div>
           </li>
     </ul>
@@ -9146,10 +9146,10 @@ Args:
 
     <div class="doc doc-contents ">
 
-        <p>find the intersection points between 2 lines
+        <p>Find the intersection points between 2 lines
 Args:
-        line1 (array like): Nx2 arrays, contains data points of curve 1
-        line2 (array like): Nx2 arrays, contains data points of curve 2</p>
+    line1 (array like): Nx2 arrays, contains data points of curve 1
+    line2 (array like): Nx2 arrays, contains data points of curve 2.</p>
 
 
 <p><span class="doc-section-title">Returns:</span></p>
@@ -9180,7 +9180,7 @@ Args:
 
     <div class="doc doc-contents ">
 
-        <p>find the intersection points between 2 curves</p>
+        <p>Find the intersection points between 2 curves.</p>
 
 
 <p><span class="doc-section-title">Parameters:</span></p>
@@ -9890,20 +9890,48 @@ NOTEs:
 as the independent variable, held in independent_vars, and the rest of the functions positional
 arguments (and, in certain cases, keyword arguments – see below) are used for Parameter names.
 <a href="https://lmfit.github.io/lmfit-py/model.html">https://lmfit.github.io/lmfit-py/model.html</a>
-- This Class defines curve-forms that are not vailable in LMFIT's built-in models</p>
-<ul>
-<li>
-<p>Attributes:
-        swType       : (default='RATIONAL') Type of witching function,
-        r0, d0       : The r_0 parameter of the switching function</p>
-</li>
-<li>
-<p>Methods:
-        fFunc    : compute &amp; return value and derivation of sw function
-        fDmax    : estimate value of Dmax</p>
-</li>
-</ul>
-<p>Ex: func = thmd.CurveLib.Linear(x)</p>
+- This Class defines curve-forms that are not vailable in LMFIT's built-in models.</p>
+
+
+<p><span class="doc-section-title">Attributes:</span></p>
+    <ul>
+        <li class="doc-section-item field-body">
+          <b><code><span title="thmd.fit.user_lmfit.UserLmfit.swType">swType</span></code></b>
+              (<code>      </code>)
+          –
+          <div class="doc-md-description">
+            <p>(default='RATIONAL') Type of witching function,</p>
+          </div>
+        </li>
+        <li class="doc-section-item field-body">
+          <b><code><span title="thmd.fit.user_lmfit.UserLmfit.r0,">r0,</span></code></b>
+              (<code><span title="d0">d0</span></code>)
+          –
+          <div class="doc-md-description">
+            <p>The r_0 parameter of the switching function</p>
+          </div>
+        </li>
+    </ul>
+
+
+<p><span class="doc-section-title">Methods:</span></p>
+    <ul>
+          <li class="doc-section-item field-body">
+            <b><code><span title="thmd.fit.user_lmfit.UserLmfit.fFunc    ">fFunc    </span></code></b>
+            –
+            <div class="doc-md-description">
+              <p>compute &amp; return value and derivation of sw function</p>
+            </div>
+          </li>
+          <li class="doc-section-item field-body">
+            <b><code><span title="thmd.fit.user_lmfit.UserLmfit.fDmax    ">fDmax    </span></code></b>
+            –
+            <div class="doc-md-description">
+              <p>estimate value of Dmax</p>
+            </div>
+          </li>
+    </ul>
+        <p>Ex: func = thmd.CurveLib.Linear(x)</p>
 
           
 
@@ -9915,144 +9943,6 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
 
 
-
-
-<p><span class="doc-section-title">Methods:</span></p>
-    <ul>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            Linear(x, a0, a1) (thmd.fit.user_lmfit.UserLmfit.Linear)" href="#thmd.fit.user_lmfit.UserLmfit.Linear">Linear</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>this func is available in LMFIT, just play as an example here</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            inverseTemperature(x, a, b) (thmd.fit.user_lmfit.UserLmfit.inverseTemperature)" href="#thmd.fit.user_lmfit.UserLmfit.inverseTemperature">inverseTemperature</a></code></b>
-            –
-            <div class="doc-md-description">
-              
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            ExpDecay(x, A, lambd) (thmd.fit.user_lmfit.UserLmfit.ExpDecay)" href="#thmd.fit.user_lmfit.UserLmfit.ExpDecay">ExpDecay</a></code></b>
-            –
-            <div class="doc-md-description">
-              
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sizeEffect(x, a, b) (thmd.fit.user_lmfit.UserLmfit.sizeEffect)" href="#thmd.fit.user_lmfit.UserLmfit.sizeEffect">sizeEffect</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>system size-dependence on term N^(&#8532;</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            unNormalGaussian(x, amp, cen, sig) (thmd.fit.user_lmfit.UserLmfit.unNormalGaussian)" href="#thmd.fit.user_lmfit.UserLmfit.unNormalGaussian">unNormalGaussian</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>The unNormalize Gaussian function</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            NormalGaussian(x, amp, cen, sig) (thmd.fit.user_lmfit.UserLmfit.NormalGaussian)" href="#thmd.fit.user_lmfit.UserLmfit.NormalGaussian">NormalGaussian</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>The Normalize Gaussian function</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_2unNormalGaussian(x, amp1, amp2, cen1, cen2, sig1, sig2) (thmd.fit.user_lmfit.UserLmfit.sum_2unNormalGaussian)" href="#thmd.fit.user_lmfit.UserLmfit.sum_2unNormalGaussian">sum_2unNormalGaussian</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>The sum of 2 Gaussian function</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_3unNormalGaussian(x, amp1, amp2, amp3, cen1, cen2, cen3, sig1, sig2, sig3) (thmd.fit.user_lmfit.UserLmfit.sum_3unNormalGaussian)" href="#thmd.fit.user_lmfit.UserLmfit.sum_3unNormalGaussian">sum_3unNormalGaussian</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>The sum of 3 Gaussian function</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_4unNormalGaussian(x, amp1, amp2, amp3, amp4, cen1, cen2, cen3, cen4, sig1, sig2, sig3, sig4) (thmd.fit.user_lmfit.UserLmfit.sum_4unNormalGaussian)" href="#thmd.fit.user_lmfit.UserLmfit.sum_4unNormalGaussian">sum_4unNormalGaussian</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>The sum of 4 Gaussian function</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_5unNormalGaussian(x, amp1, amp2, amp3, amp4, amp5, cen1, cen2, cen3, cen4, cen5, sig1, sig2, sig3, sig4, sig5) (thmd.fit.user_lmfit.UserLmfit.sum_5unNormalGaussian)" href="#thmd.fit.user_lmfit.UserLmfit.sum_5unNormalGaussian">sum_5unNormalGaussian</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>The sum of 5 Gaussian function</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_2NormalGaussian(x, amp1, amp2, cen1, cen2, sig1, sig2) (thmd.fit.user_lmfit.UserLmfit.sum_2NormalGaussian)" href="#thmd.fit.user_lmfit.UserLmfit.sum_2NormalGaussian">sum_2NormalGaussian</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>The sum of 2 Gaussian function</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_3NormalGaussian(x, amp1, amp2, amp3, cen1, cen2, cen3, sig1, sig2, sig3) (thmd.fit.user_lmfit.UserLmfit.sum_3NormalGaussian)" href="#thmd.fit.user_lmfit.UserLmfit.sum_3NormalGaussian">sum_3NormalGaussian</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>The sum of 3 Gaussian function</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_4NormalGaussian(x, amp1, amp2, amp3, amp4, cen1, cen2, cen3, cen4, sig1, sig2, sig3, sig4) (thmd.fit.user_lmfit.UserLmfit.sum_4NormalGaussian)" href="#thmd.fit.user_lmfit.UserLmfit.sum_4NormalGaussian">sum_4NormalGaussian</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>The sum of 4 Gaussian function</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            sum_5NormalGaussian(x, amp1, amp2, amp3, amp4, amp5, cen1, cen2, cen3, cen4, cen5, sig1, sig2, sig3, sig4, sig5) (thmd.fit.user_lmfit.UserLmfit.sum_5NormalGaussian)" href="#thmd.fit.user_lmfit.UserLmfit.sum_5NormalGaussian">sum_5NormalGaussian</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>The sum of 5 Gaussian function</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            DoseResp(x, A1=-3.3, A2=-2.9, LOGx0=480000, p=1.2) (thmd.fit.user_lmfit.UserLmfit.DoseResp)" href="#thmd.fit.user_lmfit.UserLmfit.DoseResp">DoseResp</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>Dose-response curve with variable Hill slope given by parameter 'p'.</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            BiDoseResp(x, A1=-3.3, A2=-2.9, LOGx01=175000, LOGx02=480000, h1=0.1, h2=0.2, p=0.5) (thmd.fit.user_lmfit.UserLmfit.BiDoseResp)" href="#thmd.fit.user_lmfit.UserLmfit.BiDoseResp">BiDoseResp</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>Biphasic Dose Response Function,</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            Carreau(x, A1=60, A2=3, t=3.0, a=2.2, n=0.3) (thmd.fit.user_lmfit.UserLmfit.Carreau)" href="#thmd.fit.user_lmfit.UserLmfit.Carreau">Carreau</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>Carreau-Yasuda model to describe pseudoplastic flow with asymptotic viscosities at zero and infinite shear rates</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            Cross(x, A1=0.1, A2=3, t=1000, m=0.9) (thmd.fit.user_lmfit.UserLmfit.Cross)" href="#thmd.fit.user_lmfit.UserLmfit.Cross">Cross</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>Cross model to describe pseudoplastic flow with asymptotic viscosities at zero and infinite shear rates</p>
-            </div>
-          </li>
-          <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            GammaCFD(x, y0, A1, a, b) (thmd.fit.user_lmfit.UserLmfit.GammaCFD)" href="#thmd.fit.user_lmfit.UserLmfit.GammaCFD">GammaCFD</a></code></b>
-            –
-            <div class="doc-md-description">
-              <p>Gamma cumulative distribution function</p>
-            </div>
-          </li>
-    </ul>
 
 
 
@@ -10081,7 +9971,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>this func is available in LMFIT, just play as an example here</p>
+        <p>This func is available in LMFIT, just play as an example here.</p>
 
           
 
@@ -10134,7 +10024,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>system size-dependence on term N^(&#8532;</p>
+        <p>System size-dependence on term N^(&#8532;.</p>
 
           
 
@@ -10153,7 +10043,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>The unNormalize Gaussian function</p>
+        <p>The unNormalize Gaussian function.</p>
 
           
 
@@ -10172,7 +10062,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>The Normalize Gaussian function</p>
+        <p>The Normalize Gaussian function.</p>
 
           
 
@@ -10191,7 +10081,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>The sum of 2 Gaussian function</p>
+        <p>The sum of 2 Gaussian function.</p>
 
           
 
@@ -10210,7 +10100,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>The sum of 3 Gaussian function</p>
+        <p>The sum of 3 Gaussian function.</p>
 
           
 
@@ -10229,7 +10119,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>The sum of 4 Gaussian function</p>
+        <p>The sum of 4 Gaussian function.</p>
 
           
 
@@ -10248,7 +10138,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>The sum of 5 Gaussian function</p>
+        <p>The sum of 5 Gaussian function.</p>
 
           
 
@@ -10267,7 +10157,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>The sum of 2 Gaussian function</p>
+        <p>The sum of 2 Gaussian function.</p>
 
           
 
@@ -10286,7 +10176,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>The sum of 3 Gaussian function</p>
+        <p>The sum of 3 Gaussian function.</p>
 
           
 
@@ -10305,7 +10195,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>The sum of 4 Gaussian function</p>
+        <p>The sum of 4 Gaussian function.</p>
 
           
 
@@ -10324,7 +10214,7 @@ arguments (and, in certain cases, keyword arguments – see below) are used for 
 
     <div class="doc doc-contents ">
 
-        <p>The sum of 5 Gaussian function</p>
+        <p>The sum of 5 Gaussian function.</p>
 
           
 
@@ -10348,7 +10238,7 @@ Origin's Category: Pharmacology
 * Params:
                 Names=A1,A2,LOGx0,p
                 Meanings=bottom asymptote,top asymptote, center, hill slope
-Initiate params: pars = mod.make_params(A1=-3.3, A2=-2.9, LOGx0=480000, p=1.2)</p>
+Initiate params: pars = mod.make_params(A1=-3.3, A2=-2.9, LOGx0=480000, p=1.2).</p>
 
           
 
@@ -10372,7 +10262,7 @@ Origin's Category: Pharmacology
 * Params:
                 Names=A1, A2, LOGx01, LOGx02, h1, h2, p
                 Meanings=Bottom, Top, 1<sup>st</sup> EC50, 2<sup>nd</sup> EC50, slope1, slope2, proportion
-Initiate params: pars = mod.make_params(A1=0, A2=100, LOGx01=-8, LOGx02=-4, h1=0.8, h2=1.2, p=0.5)</p>
+Initiate params: pars = mod.make_params(A1=0, A2=100, LOGx01=-8, LOGx02=-4, h1=0.8, h2=1.2, p=0.5).</p>
 
           
 
@@ -10396,7 +10286,7 @@ Origin's Category: Rheology
 * Params:
                 Names = A1,A2,t,a,n    &gt;0         (lower bound)
                 Meanings = zero shear viscosity,infinite shear viscosity,time constant,transition control factor,power index
-Initiate params: pars = mod.make_params(A1=-3.3, A2=-2.9, t=2.0, a=2.2, n=0.2)</p>
+Initiate params: pars = mod.make_params(A1=-3.3, A2=-2.9, t=2.0, a=2.2, n=0.2).</p>
 
           
 
@@ -10420,7 +10310,7 @@ Origin's Category: Rheology
 * Params:
                 Names = A1,A2,t,m      &gt;0         (lower bound)
                 Meanings = zero shear viscosity,infinite shear viscosity,time constant,power index
-Initiate params: pars = mod.make_params(A1=0.1, A2=3, t=1000, m=0.9)</p>
+Initiate params: pars = mod.make_params(A1=0.1, A2=3, t=1000, m=0.9).</p>
 
           
 
@@ -10444,7 +10334,7 @@ Origin's Category: Statistics
 * Params:
                 Names = y0,A1,a,b          (A1,a,b &gt;0)
                 Meanings = Offset,Amplitude,Shape,Scale
-Initiate params: pars = mod.make_params(A1=0.1, A2=3, t=1000, m=0.9)</p>
+Initiate params: pars = mod.make_params(A1=0.1, A2=3, t=1000, m=0.9).</p>
 
           
 
@@ -10698,12 +10588,8 @@ Initiate params: pars = mod.make_params(A1=0.1, A2=3, t=1000, m=0.9)</p>
       <a href="../io_read_block/#thmd.io.read_block"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;read_block</a>
   </span>
 
-            <span class="doc doc-backlink-crumb">
-      <a href="../io_read_block/#thmd.io.read_block.LmpLogFile"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;LmpLogFile</a>
-  </span>
-
             <span class="doc doc-backlink-crumb last">
-      <a href="../io_read_block/#thmd.io.read_block.LmpLogFile.read_log"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;read_log</a>
+      <a href="../io_read_block/#thmd.io.read_block.LmpLogFile"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;LmpLogFile</a>
   </span>
 
       </li>
@@ -11133,8 +11019,12 @@ Args:
 
             <ul class="doc doc-backlink-list">
       <li class="doc doc-backlink">
-            <span class="doc doc-backlink-crumb last">
+            <span class="doc doc-backlink-crumb">
       <a href="../io_read_block/#thmd.io.read_block.LmpAveChunk"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;LmpAveChunk</a>
+  </span>
+
+            <span class="doc doc-backlink-crumb last">
+      <a href="../io_read_block/#thmd.io.read_block.LmpAveChunk.read_AveChunk"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;read_AveChunk</a>
   </span>
 
       </li>
@@ -11370,12 +11260,8 @@ Args:
       <a href="../io_read_block/#thmd.io.read_block"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;read_block</a>
   </span>
 
-            <span class="doc doc-backlink-crumb">
-      <a href="../io_read_block/#thmd.io.read_block.PlumHistogram"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;PlumHistogram</a>
-  </span>
-
             <span class="doc doc-backlink-crumb last">
-      <a href="../io_read_block/#thmd.io.read_block.PlumHistogram.read_histogram"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;read_histogram</a>
+      <a href="../io_read_block/#thmd.io.read_block.PlumHistogram"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;PlumHistogram</a>
   </span>
 
       </li>
@@ -12942,8 +12828,12 @@ If both <code>column_names</code> and <code>header_line</code> are not available
       <a href="../io_traj/#thmd.io.traj"><code class="doc-symbol doc-symbol-toc doc-symbol-module"></code>&nbsp;traj</a>
   </span>
 
-            <span class="doc doc-backlink-crumb last">
+            <span class="doc doc-backlink-crumb">
       <a href="../io_traj/#thmd.io.traj.Frame"><code class="doc-symbol doc-symbol-toc doc-symbol-class"></code>&nbsp;Frame</a>
+  </span>
+
+            <span class="doc doc-backlink-crumb last">
+      <a href="../io_traj/#thmd.io.traj.Frame.copy"><code class="doc-symbol doc-symbol-toc doc-symbol-method"></code>&nbsp;copy</a>
   </span>
 
       </li>
@@ -15564,7 +15454,7 @@ beta (float):</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            check_bibtex(bib_file: str, verbose: bool = True, logfile: bool = False, lower_key=False) -> list (thmd.post.latex.check_bibtex)" href="#thmd.post.latex.check_bibtex">check_bibtex</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            check_bibtex(bib_file: str, verbose: bool = True, logfile: bool = False, lower_key=False) -> None (thmd.post.latex.check_bibtex)" href="#thmd.post.latex.check_bibtex">check_bibtex</a></code></b>
             –
             <div class="doc-md-description">
               <p>Check for missing fields in the bibtex entries. Based on the <code>type</code> of the entry, there are <a href="https://www.bibtex.com/e/entry-types/">mandatory fields</a>. This function is to check if any of mandatory fields is missing.</p>
@@ -15585,7 +15475,7 @@ beta (float):</p>
             </div>
           </li>
           <li class="doc-section-item field-body">
-            <b><code><a class="autorefs autorefs-internal" title="            replace_acronyms(tex_file: str, acronyms: dict) -> list (thmd.post.latex.replace_acronyms)" href="#thmd.post.latex.replace_acronyms">replace_acronyms</a></code></b>
+            <b><code><a class="autorefs autorefs-internal" title="            replace_acronyms(tex_file: str, acronyms: dict) -> dict (thmd.post.latex.replace_acronyms)" href="#thmd.post.latex.replace_acronyms">replace_acronyms</a></code></b>
             –
             <div class="doc-md-description">
               <p>Check and replace if acronyms are used in a <code>.tex</code> file.</p>
@@ -15692,7 +15582,7 @@ beta (float):</p>
     <ul>
         <li class="doc-section-item field-body">
             <b><code>tex_files</code></b>
-              (<code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>]</code>)
+              (<code><span title="Union">Union</span>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>]</code>)
           –
           <div class="doc-md-description">
             <p>paths to <code>.tex</code> files</p>
@@ -15830,7 +15720,7 @@ beta (float):</p>
     <ul>
         <li class="doc-section-item field-body">
             <b><code>tex_files</code></b>
-              (<code><a class="autorefs autorefs-external" title="typing.Union" href="https://docs.python.org/3/library/typing.html#typing.Union">Union</a>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>]</code>)
+              (<code><span title="Union">Union</span>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>, <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#list">list</a>]</code>)
           –
           <div class="doc-md-description">
             <p>path to <code>.tex</code> files</p>
@@ -15883,7 +15773,7 @@ beta (float):</p>
 
 
 <h5 id="thmd.post.latex.check_bibtex" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_bibtex</span><span class="p">(</span><span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">lower_key</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">check_bibtex</span><span class="p">(</span><span class="n">bib_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">verbose</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">logfile</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">lower_key</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span></code>
 
 <a href="#thmd.post.latex.check_bibtex" class="headerlink" title="Permanent link">¤</a></h5>
 
@@ -16134,7 +16024,7 @@ pip install panflute</code>.</p>
 
 
 <h5 id="thmd.post.latex.replace_acronyms" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">replace_acronyms</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">acronyms</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">list</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-function"></code>            <code class="highlight language-python"><span class="n">replace_acronyms</span><span class="p">(</span><span class="n">tex_file</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">acronyms</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span></code>
 
 <a href="#thmd.post.latex.replace_acronyms" class="headerlink" title="Permanent link">¤</a></h5>
 
